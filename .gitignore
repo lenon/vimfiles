@@ -1,3 +1,5 @@
 .netrwhist
 *~
 *.swp
+tmp/*
+!tmp/.gitkeep
