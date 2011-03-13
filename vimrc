@@ -1,29 +1,23 @@
-"The runtimepath contains a list of paths where vim looks for plugins, config files, etc
-set runtimepath=~/.vim
-
-"Turn off vi compatibility mode
+"Turn off Vi compatibility mode
 set nocompatible
 
 "Allow Vim to manage multiple buffers effectively
 set hidden
 
-"Turn on syntax highlighting
-syntax on
-
 "Show line numbers
 set number
+
+"Show current mode on status line
+set showmode
 
 "Show commands on status line
 set showcmd
 
-"Number of spaces for tabs
-set tabstop=2
-
-"Number of spaces for indentation
-set shiftwidth=2
-
-"Convert tabs to spaces
-set expandtab
+"Indentation
+set tabstop=2    "Number of spaces for tabs
+set shiftwidth=2 "Number of spaces for indentation
+set expandtab    "Convert tabs to spaces
+set autoindent   "Self explanatory, huh?
 
 "Turn on backup
 set backup
@@ -33,7 +27,33 @@ set swapfile
 set backupdir=~/.vim/tmp
 set dir=~/.vim/tmp
 
-"Change the terminal title
+"Show opened file in window title
 set title
-set titlestring=%<%F%h%m%r%h%w
+
+"Allow backspacing over everything in insert mode
+set backspace=eol,start,indent
+
+"Show the cursor position
+set ruler
+
+"Number of commands saved in the history list
+set history=1500
+
+"Show tabs and trailing spaces
+set list
+set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+"Highlight the current column
+"set cursorcolumn
+
+"Highlight the current line
+set cursorline
+
+"Tell the term has 256 colors
+set t_Co=256
+
+"Turn on syntax highlighting
+syntax on
+
+colorscheme railscasts
 
