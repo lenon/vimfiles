@@ -63,3 +63,8 @@ syntax on
 
 colorscheme railscasts
 
+"Nerdtree settings
+let g:NERDTreeMouseMode = 2
+let g:NERDTreeWinSize = 40
+nnoremap <f2> :NERDTreeToggle<cr> "Toggle Nerdtree
+
