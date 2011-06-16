@@ -97,3 +97,5 @@ endfunction
 
 autocmd VimEnter * call AutoOpenNerdtree()
 
+autocmd BufRead,BufNewFile Gemfile set filetype=Gemfile
+
