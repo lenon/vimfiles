@@ -22,6 +22,8 @@ set showmode
 " Show commands on status line
 set showcmd
 
+set nowrap
+
 " Indentation
 set tabstop=2    " Number of spaces for tabs
 set shiftwidth=2 " Number of spaces for indentation
@@ -98,4 +100,10 @@ endfunction
 autocmd VimEnter * call AutoOpenNerdtree()
 
 autocmd BufRead,BufNewFile Gemfile set filetype=Gemfile
+
+" Convenient way to move between tabs
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
 
