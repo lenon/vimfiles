@@ -27,7 +27,7 @@ set tabstop=2    " Number of spaces for tabs
 set shiftwidth=2 " Number of spaces for indentation
 set expandtab    " Convert tabs to spaces
 set autoindent   " Self explanatory, huh?
-set copyindent   " Copy the previous indentation on autoindenting
+set copyindent   " Copy the previous indentation on auto indenting
 
 " Turn on backup
 set backup
@@ -68,15 +68,17 @@ syntax on
 " The color scheme (srsly)
 colorscheme railscasts
 
-" Nerdtree settings -----------------------------------------------------------
+" Nerdtree --------------------------------------------------------------------
+" Toggle Nerdtree with the <F2> key
+nnoremap <f2> :NERDTreeToggle<cr>
 
-let g:NERDTreeWinSize = 40
-nnoremap <f2> :NERDTreeToggle<cr> " Toggle Nerdtree with the <F2> key
+" Auto open NERDTree
+autocmd VimEnter * NERDTree
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
-" ( https://github.com/scrooloose/nerdtree/issues/21#issuecomment-907483 )
-function! s:CloseIfOnlyNerdTreeLeft()
+" (https://github.com/carlhuda/janus/blob/master/gvimrc#L85)
+function s:CloseIfOnlyNerdTreeLeft()
   if exists("t:NERDTreeBufName")
     if bufwinnr(t:NERDTreeBufName) != -1
       if winnr("$") == 1
@@ -88,20 +90,9 @@ endfunction
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
-" Self explanatory, huh?
-function! AutoOpenNerdtree()
-  if 0 == argc()
-    NERDTree
-  end
-endfunction
-
-autocmd VimEnter * call AutoOpenNerdtree()
-
+" Syntax highlight ------------------------------------------------------------
+" Gemfile
 autocmd BufRead,BufNewFile Gemfile set filetype=Gemfile
 
-" Convenient way to move between tabs
-map <C-t><up> :tabr<cr>
-map <C-t><down> :tabl<cr>
-map <C-t><left> :tabp<cr>
-map <C-t><right> :tabn<cr>
+" Keyboard commands -----------------------------------------------------------
 
