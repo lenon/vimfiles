@@ -19,6 +19,7 @@ set showmode
 " Show commands on status line
 set showcmd
 
+" Disable automatic word wrapping
 set nowrap
 
 " Indentation
