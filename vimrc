@@ -72,6 +72,9 @@ colorscheme railscasts
 " Toggle Nerdtree with the <F2> key
 nnoremap <f2> :NERDTreeToggle<cr>
 
+" Show hidden files by default
+let NERDTreeShowHidden=1
+
 " Auto open NERDTree
 autocmd VimEnter * NERDTree
 
