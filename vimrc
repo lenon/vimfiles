@@ -13,9 +13,6 @@ set hidden
 " Show line numbers
 set number
 
-" Yes, i know... mouse is for noobs :/
-set mouse=a
-
 " Show current mode on status line
 set showmode
 
