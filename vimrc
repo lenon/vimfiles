@@ -95,4 +95,4 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 autocmd BufRead,BufNewFile Gemfile set filetype=Gemfile
 
 " Keyboard commands -----------------------------------------------------------
-
+" not yet, risos
