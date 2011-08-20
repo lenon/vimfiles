@@ -68,10 +68,10 @@ syntax on
 " The color scheme (srsly)
 colorscheme railscasts
 
-" Nerdtree settings
-let g:NERDTreeMouseMode = 2
+" Nerdtree settings -----------------------------------------------------------
+
 let g:NERDTreeWinSize = 40
-nnoremap <f2> :NERDTreeToggle<cr> "Toggle Nerdtree
+nnoremap <f2> :NERDTreeToggle<cr> " Toggle Nerdtree with the <F2> key
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
