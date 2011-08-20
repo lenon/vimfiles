@@ -1,3 +1,15 @@
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/zencoding-vim"]
+	path = bundle/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
