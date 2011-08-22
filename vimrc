@@ -96,6 +96,7 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 " Syntax highlight ------------------------------------------------------------
 " Gemfile
 autocmd BufRead,BufNewFile Gemfile set filetype=Gemfile
+" Rackup (config.ru, app.ru, etc)
 autocmd BufRead,BufNewFile *.ru set filetype=Rackup
 
 " Keyboard commands -----------------------------------------------------------
