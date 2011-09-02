@@ -13,7 +13,7 @@ Clone this repository into your home directory:
     cd ~/.vim
     git submodule update --init
 
-Add the following line in your ~/.bashrc (or ~/.bash\_profile):
+Add the following line in your ~/.bashrc (or ~/.bash\_profile, ~/.zshrc, etc):
 
     alias vim="vim -u ~/.vim/vimrc"
 
