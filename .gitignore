@@ -3,3 +3,7 @@
 *.swp
 tmp/*
 !tmp/.gitkeep
+bundle/*
+!bundle/vundle
+!bundle/vundle/*
+

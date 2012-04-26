@@ -27,3 +27,16 @@ And enjoy:
 
     more soon :P
 
+# Ubuntu install
+
+Command-T
+
+:BundleInstall
+cd ~/.vim/bundle/Command-T/ruby/
+
+if using RVM
+rvm use system
+ruby extconf.rb
+make
+sudo make install
+

@@ -1,103 +1,79 @@
-" Turn off Vi compatibility mode
-set nocompatible
+set nocompatible " Turn off Vi compatibility mode
+filetype off " required (I don't know why :P)
 
-" Necessary on some Linux distros for pathogen to properly load bundles
-filetype off
+" Vundle setup
+" ============
 
-" Activate pathogen
-call pathogen#runtime_append_all_bundles()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+filetype plugin indent on
+Bundle 'gmarik/vundle'
+
+" wincent/Command-T
+" =================
+
+Bundle 'wincent/Command-T.git'
+
+let g:CommandTMatchWindowAtTop=1 " show window at top
 
 " Allow Vim to manage multiple buffers effectively
-set hidden
+"set hidden
 
 " Show line numbers
-set number
+"set number
 
 " Show current mode on status line
-set showmode
+"set showmode
 
 " Show commands on status line
-set showcmd
+"set showcmd
 
 " Disable automatic word wrapping
-set nowrap
+"set nowrap
 
 " Indentation
-set tabstop=2    " Number of spaces for tabs
-set shiftwidth=2 " Number of spaces for indentation
-set expandtab    " Convert tabs to spaces
-set autoindent   " Self explanatory, huh?
-set copyindent   " Copy the previous indentation on auto indenting
+"set tabstop=2    " Number of spaces for tabs
+"set shiftwidth=2 " Number of spaces for indentation
+"set expandtab    " Convert tabs to spaces
+"set autoindent   " Self explanatory, huh?
+"set copyindent   " Copy the previous indentation on auto indenting
 
 " Turn on backup
-set backup
-set swapfile
+"set backup
+"set swapfile
 
 " The directory where the swap/backup files are stored
-set backupdir=~/.vim/tmp
-set dir=~/.vim/tmp
+"set backupdir=~/.vim/tmp
+"set dir=~/.vim/tmp
 
 " Number of commands saved in the history list
-set history=1500
+"set history=1500
 
 " Number of undo levels
-set undolevels=1000
+"set undolevels=1000
 
 " Show opened file in window title
-set title
+"set title
 
 " Allow backspacing over everything in insert mode
-set backspace=eol,start,indent
+"set backspace=eol,start,indent
 
 " Show the cursor position
-set ruler
+"set ruler
 
 " Show tabs and trailing spaces
-set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+"set list
+"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 " Highlight the current line
-set cursorline
+"set cursorline
 
 " Tell the term has 256 colors
-set t_Co=256
+"set t_Co=256
 
 " Turn on syntax highlighting
-syntax on
+"syntax on
 
 " The color scheme (srsly)
-colorscheme railscasts
+"colorscheme railscasts
 
-" Nerdtree --------------------------------------------------------------------
-" Toggle Nerdtree with the <F2> key
-nnoremap <f2> :NERDTreeToggle<cr>
-
-" Show hidden files by default
-let NERDTreeShowHidden=1
-
-" Auto open NERDTree
-autocmd VimEnter * NERDTree
-
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-" (https://github.com/carlhuda/janus/blob/master/gvimrc#L85)
-function s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
-
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-" Syntax highlight ------------------------------------------------------------
-" Gemfile
-autocmd BufRead,BufNewFile Gemfile set filetype=Gemfile
-" Rackup (config.ru, app.ru, etc)
-autocmd BufRead,BufNewFile *.ru set filetype=Rackup
-
-" Keyboard commands -----------------------------------------------------------
-" not yet, risos
