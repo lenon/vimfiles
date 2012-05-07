@@ -1,8 +1,8 @@
 # ~/.vim
 
-This is my `~/.vim` directory.
+This is my Vim configuration. If you want to use this, please take a look at the following steps...
 
-# Instalation
+## Instalation
 
 Clone this repository into your home directory:
 
@@ -13,30 +13,25 @@ Clone this repository into your home directory:
     cd ~/.vim
     git submodule update --init
 
-Add the following line in your ~/.bashrc (or ~/.bash\_profile, ~/.zshrc, etc):
+Add the following line on your ~/.bashrc (or ~/.bash\_profile, ~/.zshrc, etc):
 
     alias vim="vim -u ~/.vim/vimrc"
 
-And enjoy:
+Then source your ~/.bashrc (or reopen your terminal):
+
+    source ~/.bashrc
+
+Open Vim:
 
     vim
 
-# Usage
+And run...
 
-    <F2> Toggle NERDTree
+    :BundleInstall
 
-    more soon :P
+(This will install all the plugins)
 
-# Ubuntu install
+## TODO
 
-Command-T
-
-:BundleInstall
-cd ~/.vim/bundle/Command-T/ruby/
-
-if using RVM
-rvm use system
-ruby extconf.rb
-make
-sudo make install
+ * Increment this README with more information about included plugins;
 
