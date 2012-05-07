@@ -1,5 +1,5 @@
-set nocompatible " Turn off Vi compatibility mode
-filetype off " required (I don't know why :P)
+set nocompatible " turn off Vi compatibility mode
+filetype off " required (to be honest, I don't know why :P)
 
 " Vundle setup
 " ============
@@ -9,71 +9,44 @@ call vundle#rc()
 filetype plugin indent on
 Bundle 'gmarik/vundle'
 
-" wincent/Command-T
-" =================
+" CtrlP
+" =====
 
-Bundle 'wincent/Command-T.git'
+Bundle 'kien/ctrlp.vim'
 
-let g:CommandTMatchWindowAtTop=1 " show window at top
+" VIM setup
+" =========
 
-" Allow Vim to manage multiple buffers effectively
-"set hidden
+set number " show line numbers
+set showmode " show current mode on status line
+set showcmd " show commands on status line
+set nowrap " disable automatic word wrapping
 
-" Show line numbers
-"set number
+set history=1500 " number of commands saved in the history list
+set undolevels=1000 " number of undo levels
 
-" Show current mode on status line
-"set showmode
+set backupdir=~/.vim/tmp " the directory where the swap/backup files should be stored
+set dir=~/.vim/tmp
 
-" Show commands on status line
-"set showcmd
+set backup " turn on backup
+set swapfile
 
-" Disable automatic word wrapping
-"set nowrap
+set title " show the current filename on the window title
+set backspace=eol,start,indent " allow backspacing over everything in insert mode
 
-" Indentation
-"set tabstop=2    " Number of spaces for tabs
-"set shiftwidth=2 " Number of spaces for indentation
-"set expandtab    " Convert tabs to spaces
-"set autoindent   " Self explanatory, huh?
-"set copyindent   " Copy the previous indentation on auto indenting
+set ruler " show the cursor position on status line
 
-" Turn on backup
-"set backup
-"set swapfile
+set hidden " allow Vim to manage multiple buffers effectively
 
-" The directory where the swap/backup files are stored
-"set backupdir=~/.vim/tmp
-"set dir=~/.vim/tmp
+set tabstop=2 " default tab size
+set expandtab " convert tabs to spaces
+set autoindent " self explanatory, huh? (like the most of commands hehe)
 
-" Number of commands saved in the history list
-"set history=1500
+set list
+set listchars=tab:▷⋅,trail:⋅,nbsp:⋅ " show tabs and trailing spaces
 
-" Number of undo levels
-"set undolevels=1000
+set t_Co=256 " the term has 256 colors
 
-" Show opened file in window title
-"set title
-
-" Allow backspacing over everything in insert mode
-"set backspace=eol,start,indent
-
-" Show the cursor position
-"set ruler
-
-" Show tabs and trailing spaces
-"set list
-"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
-
-" Highlight the current line
-"set cursorline
-
-" Tell the term has 256 colors
-"set t_Co=256
-
-" Turn on syntax highlighting
-"syntax on
-
-" The color scheme (srsly)
-"colorscheme railscasts
+syntax on " turn on syntax highlighting
+colorscheme railscasts " the color scheme (srsly)
 
