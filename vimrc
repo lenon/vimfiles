@@ -8,8 +8,8 @@ call vundle#rc()
 filetype plugin indent on
 Bundle 'gmarik/vundle'
 
-" Molokai colorscheme
-Bundle 'molokai'
+" CSApprox
+" Bundle 'CSApprox'
 
 " CtrlP
 Bundle 'kien/ctrlp.vim'
@@ -73,5 +73,5 @@ set hlsearch " highlight search
 set incsearch " show matches while typing
 
 syntax on " turn on syntax highlighting
-colorscheme molokai " the color scheme (srsly)
+colorscheme lanai256 " the color scheme (srsly)
 
