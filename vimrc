@@ -2,14 +2,10 @@ set nocompatible " turn off Vi compatibility mode
 filetype off " required (to be honest, I don't know why :P)
 
 " Vundle
-" ======
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 filetype plugin indent on
 Bundle 'gmarik/vundle'
-
-" CSApprox
-" Bundle 'CSApprox'
 
 " CtrlP
 Bundle 'kien/ctrlp.vim'
@@ -33,45 +29,49 @@ let g:Powerline_symbols = 'unicode'
 let g:Powerline_colorscheme = 'skwp'
 
 " VIM setup
-" =========
-
 set laststatus=2 " always show the status line
 set encoding=utf-8
-
 set number " show line numbers
 set showmode " show current mode on status line
 set showcmd " show commands on status line
 set nowrap " disable automatic word wrapping
-
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
-
 set backupdir=~/.vim/tmp " the directory where the swap/backup files should be stored
 set dir=~/.vim/tmp
-
 set backup " turn on backup
 set swapfile
-
 set title " show the current filename on the window title
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
-
 set ruler " show the cursor position on status line
-
 set hidden " allow Vim to manage multiple buffers effectively
-
 set tabstop=2 " default tab size
 set shiftwidth=2
 set expandtab " convert tabs to spaces
 set autoindent " self explanatory, huh? (like the most of commands hehe)
-
-set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅ " show tabs and trailing spaces
-
+set list " show all characters
+set listchars=tab:>~,trail:~,nbsp:~,extends:> " show tabs and trailing spaces
 set t_Co=256 " the term has 256 colors
-
 set hlsearch " highlight search
 set incsearch " show matches while typing
+set ttyfast " improves redrawing
+set lazyredraw
+set cursorline " highlight current line
+set wildmode=list:longest " a list of completions will be shown when press tab on the command line
+
+" Jellybeans colorscheme
+Bundle 'jellybeans.vim'
 
 syntax on " turn on syntax highlighting
-colorscheme lanai256 " the color scheme (srsly)
+colorscheme jellybeans " the color scheme (srsly)
+
+" Relative line numbers in normal mode
+set rnu
+au InsertEnter * :set nu
+au InsertLeave * :set rnu
+au FocusLost * :set nu
+au FocusGained * :set rnu
+
+" Syntax highlight
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
