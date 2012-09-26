@@ -28,6 +28,9 @@ Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'unicode'
 let g:Powerline_colorscheme = 'skwp'
 
+" jslint.vim
+Bundle 'hallettj/jslint.vim'
+
 " VIM setup
 set laststatus=2 " always show the status line
 set encoding=utf-8
