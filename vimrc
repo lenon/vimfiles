@@ -78,3 +78,12 @@ au FocusGained * :set rnu
 " Syntax highlight
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType html setlocal shiftwidth=4 tabstop=4
+
+fun! DisableJSLint()
+  let b:jslint_disabled = 1
+endfun
+
+autocmd BufNewFile,BufRead *_spec.js silent call DisableJSLint() " disable jslint for javascript specs
+
