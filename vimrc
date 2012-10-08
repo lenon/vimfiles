@@ -31,6 +31,12 @@ let g:Powerline_colorscheme = 'skwp'
 " jslint.vim
 Bundle 'hallettj/jslint.vim'
 
+" snipmate (maintained by Rok Garbas)
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
+
 " VIM setup
 set laststatus=2 " always show the status line
 set encoding=utf-8
