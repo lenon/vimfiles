@@ -1,41 +1,32 @@
 set nocompatible " turn off Vi compatibility mode
 filetype off " required (to be honest, I don't know why :P)
 
-" Vundle
+" Vundle setup
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 filetype plugin indent on
 Bundle 'gmarik/vundle'
 
-" CtrlP
+" My bundles
 Bundle 'kien/ctrlp.vim'
-
-" SuperTab continued
 Bundle 'ervandew/supertab'
-
-" Gist.vim
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
-let g:gist_detect_filetype = 1 " autodetect gist filetype
-let g:gist_open_browser_after_post = 1 " open browser after create a gist
-let g:gist_post_private = 1 " create private gist by default
-
-" fugitive.vim
 Bundle 'tpope/vim-fugitive'
-
-" Powerline
 Bundle 'Lokaltog/vim-powerline'
-let g:Powerline_symbols = 'unicode'
-let g:Powerline_colorscheme = 'skwp'
-
-" jslint.vim
 Bundle 'hallettj/jslint.vim'
-
-" snipmate (maintained by Rok Garbas)
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
+Bundle 'jellybeans.vim'
+
+let g:gist_detect_filetype         = 1 " autodetect gist filetype
+let g:gist_open_browser_after_post = 1 " open browser after create a gist
+let g:gist_post_private            = 1 " create private gist by default
+
+let g:Powerline_symbols     = 'unicode'
+let g:Powerline_colorscheme = 'skwp'
 
 " VIM setup
 set laststatus=2 " always show the status line
@@ -68,9 +59,6 @@ set lazyredraw
 set cursorline " highlight current line
 set wildmode=list:longest " a list of completions will be shown when press tab on the command line
 
-" Jellybeans colorscheme
-Bundle 'jellybeans.vim'
-
 syntax on " turn on syntax highlighting
 colorscheme jellybeans " the color scheme (srsly)
 
@@ -84,6 +72,7 @@ au FocusGained * :set rnu
 " Syntax highlight
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
+" Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 
