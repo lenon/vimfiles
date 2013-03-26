@@ -14,7 +14,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'hallettj/jslint.vim'
-Bundle 'jellybeans.vim'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 let g:gist_detect_filetype         = 1 " autodetect gist filetype
 let g:gist_open_browser_after_post = 1 " open browser after create a gist
@@ -57,7 +57,7 @@ set cursorline " highlight current line
 set wildmode=list:longest " a list of completions will be shown when press tab on the command line
 
 syntax on " turn on syntax highlighting
-colorscheme jellybeans " the color scheme (srsly)
+colorscheme Tomorrow-Night " the color scheme (srsly)
 
 " Relative line numbers in normal mode
 set rnu
