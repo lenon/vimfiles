@@ -28,10 +28,12 @@ let g:gist_post_private            = 1 " create private gist by default
 let g:Powerline_symbols     = 'unicode'
 let g:Powerline_colorscheme = 'skwp'
 
+let g:SuperTabDefaultCompletionType = "context"
+
 " VIM setup
 set laststatus=2 " always show the status line
 set encoding=utf-8
-set number " show line numbers
+" set number " show line numbers
 set showmode " show current mode on status line
 set showcmd " show commands on status line
 set nowrap " disable automatic word wrapping
