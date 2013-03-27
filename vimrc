@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'hallettj/jslint.vim'
 Bundle 'chriskempson/base16-vim'
+Bundle 'nginx.vim'
 
 let g:gist_detect_filetype         = 1 " autodetect gist filetype
 let g:gist_open_browser_after_post = 1 " open browser after create a gist
@@ -72,6 +73,7 @@ au FocusGained * :set rnu
 
 " Syntax highlight
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead *nginx.conf* set filetype=nginx
 
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
