@@ -72,8 +72,10 @@ au FocusLost * :set nu
 au FocusGained * :set rnu
 
 " Syntax highlight
-autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile set filetype=ruby
+autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
 autocmd BufNewFile,BufRead *nginx.conf* set filetype=nginx
+autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
 
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
