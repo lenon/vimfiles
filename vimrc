@@ -20,8 +20,7 @@ let g:gist_detect_filetype         = 1 " autodetect gist filetype
 let g:gist_open_browser_after_post = 1 " open browser after create a gist
 let g:gist_post_private            = 1 " create private gist by default
 
-let g:Powerline_symbols     = 'unicode'
-let g:Powerline_colorscheme = 'skwp'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let g:SuperTabDefaultCompletionType = "context"
 
@@ -29,7 +28,7 @@ let g:SuperTabDefaultCompletionType = "context"
 set laststatus=2 " always show the status line
 set encoding=utf-8
 " set number " show line numbers
-set showmode " show current mode on status line
+set noshowmode " do not show current mode on status line
 set showcmd " show commands on status line
 set nowrap " disable automatic word wrapping
 set history=300 " number of commands saved in the history list
