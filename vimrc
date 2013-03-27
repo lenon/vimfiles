@@ -12,6 +12,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'hallettj/jslint.vim'
 Bundle 'chriskempson/base16-vim'
@@ -58,6 +59,9 @@ set wildmode=list:longest " a list of completions will be shown when press tab o
 syntax on " turn on syntax highlighting
 set background=dark
 colorscheme base16-tomorrow " the color scheme (srsly)
+
+" Open a NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
 
 " Relative line numbers in normal mode
 set rnu
