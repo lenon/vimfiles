@@ -30,7 +30,6 @@ let g:SuperTabDefaultCompletionType = "context"
 " VIM setup
 set laststatus=2 " always show the status line
 set encoding=utf-8
-" set number " show line numbers
 set noshowmode " do not show current mode on status line
 set showcmd " show commands on status line
 set nowrap " disable automatic word wrapping
