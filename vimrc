@@ -98,3 +98,5 @@ inoremap <left> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+nnoremap <silent> <Leader>/ :nohlsearch<CR> " switch highlighting back off using <Leader>/
+
