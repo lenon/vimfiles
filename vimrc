@@ -89,13 +89,13 @@ endfun
 autocmd BufNewFile,BufRead *_spec.js silent call DisableJSLint() " disable jslint for javascript specs
 
 " Disable arrow keys (omg, dafuq i'm doing)
-noremap <right> <Esc>
-noremap <left> <Esc>
-noremap <up> <Esc>
-noremap <down> <Esc>
+noremap <right> <nop>
+noremap <left> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
 
-inoremap <right> <Esc>
-inoremap <left> <Esc>
-inoremap <up> <Esc>
-inoremap <down> <Esc>
+inoremap <right> <nop>
+inoremap <left> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
 
