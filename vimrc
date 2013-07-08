@@ -59,7 +59,7 @@ set wildmode=list:longest " a list of completions will be shown when press tab o
 
 syntax on " turn on syntax highlighting
 set background=dark
-colorscheme base16-tomorrow " the color scheme (srsly)
+colorscheme base16-default " the color scheme (srsly)
 
 " Open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
