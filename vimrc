@@ -14,10 +14,10 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
-Bundle 'hallettj/jslint.vim'
 Bundle 'chriskempson/base16-vim'
 Bundle 'nginx.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/syntastic'
 
 let g:gist_detect_filetype         = 1 " autodetect gist filetype
 let g:gist_open_browser_after_post = 1 " open browser after create a gist
@@ -80,12 +80,6 @@ autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
-
-fun! DisableJSLint()
-  let b:jslint_disabled = 1
-endfun
-
-autocmd BufNewFile,BufRead *_spec.js silent call DisableJSLint() " disable jslint for javascript specs
 
 " Disable arrow keys (omg, dafuq i'm doing)
 noremap <right> <nop>
