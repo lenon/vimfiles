@@ -92,5 +92,6 @@ inoremap <left> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
-nnoremap <silent> <leader>/ :set invhlsearch<CR> " switch highlighting back off using <Leader>/
+" Switch highlighting back off using <Leader>/
+nnoremap <silent> <leader>/ :set invhlsearch<CR>
 
