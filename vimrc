@@ -47,15 +47,22 @@ set tabstop=2 " default tab size
 set shiftwidth=2
 set expandtab " convert tabs to spaces
 set autoindent " self explanatory, huh? (like the most of commands hehe)
+set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
-set listchars=tab:>~,trail:~,nbsp:~,extends:> " show tabs and trailing spaces
+set listchars=tab:→\ ,trail:· " show tabs and trailing spaces
 set t_Co=256 " the term has 256 colors
 set hlsearch " highlight search
 set incsearch " show matches while typing
+set ignorecase " ignore case when searching
+set smartcase " ignore case if search pattern is all lowercase
 set ttyfast " improves redrawing
 set lazyredraw
 set cursorline " highlight current line
 set wildmode=list:longest " a list of completions will be shown when press tab on the command line
+set showmatch " show matching parenthesis
+set noesckeys " <esc> is recognized immediately
+set novisualbell " disable visual bell
+set noerrorbells " disable error bells
 
 syntax on " turn on syntax highlighting
 set background=dark
@@ -63,6 +70,9 @@ colorscheme base16-default " the color scheme (srsly)
 
 " Open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
+
+" Automatically quit vim if NERDTree is last and only buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Relative line numbers in normal mode
 set rnu
@@ -72,7 +82,7 @@ au FocusLost * :set nu
 au FocusGained * :set rnu
 
 " Syntax highlight
-autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile set filetype=ruby
+autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,*.god,*unicorn.conf* set filetype=ruby
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
 autocmd BufNewFile,BufRead *nginx.conf* set filetype=nginx
 autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
