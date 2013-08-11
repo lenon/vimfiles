@@ -68,6 +68,7 @@ set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
 set novisualbell " disable visual bell
 set noerrorbells " disable error bells
+set autoread " automatically reload file on change
 
 syntax on " turn on syntax highlighting
 set background=dark
