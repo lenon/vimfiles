@@ -43,7 +43,7 @@ set undolevels=300 " number of undo levels
 set backupdir=~/.vim/tmp " the directory where the swap/backup files should be stored
 set dir=~/.vim/tmp
 set backup " turn on backup
-set swapfile
+set noswapfile
 set title " show the current filename on the window title
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
 set ruler " show the cursor position on status line
