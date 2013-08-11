@@ -28,6 +28,8 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let g:SuperTabDefaultCompletionType = "context"
 
+let g:NERDSpaceDelims = 1 " append an extra space after comment delimiter on NERD Commenter
+
 let g:rspec_command = "!bundle exec rspec --no-color {spec}"
 
 " VIM setup
