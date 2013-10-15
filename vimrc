@@ -69,6 +69,7 @@ set noesckeys " <esc> is recognized immediately
 set novisualbell " disable visual bell
 set noerrorbells " disable error bells
 set autoread " automatically reload file on change
+set scrolloff=5 " minimum number of screen lines above and below the cursor
 
 syntax on " turn on syntax highlighting
 set background=dark
