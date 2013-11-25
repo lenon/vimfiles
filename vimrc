@@ -17,11 +17,15 @@ Bundle 'nginx.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 
+" ervandew/supertab
+let g:SuperTabDefaultCompletionType = '<c-n>'
 
-let g:SuperTabDefaultCompletionType = "context"
+" scrooloose/nerdcommenter
+let g:NERDSpaceDelims = 1 " append an extra space after comment delimiter
 
-let g:NERDSpaceDelims = 1 " append an extra space after comment delimiter on NERD Commenter
-
+" kien/ctrlp.vim
+let g:ctrlp_map = '<leader>p' " open using leader key
+let g:ctrlp_working_path_mode = 0 " disable working directory detection
 
 " VIM setup
 set laststatus=2 " always show the status line
@@ -34,7 +38,7 @@ set undolevels=300 " number of undo levels
 set backupdir=~/.vim/tmp " the directory where the swap/backup files should be stored
 set dir=~/.vim/tmp
 set backup " turn on backup
-set noswapfile
+set noswapfile " turn off swap file
 set title " show the current filename on the window title
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
 set ruler " show the cursor position on status line
@@ -51,9 +55,9 @@ set hlsearch " highlight search
 set incsearch " show matches while typing
 set ignorecase " ignore case when searching
 set smartcase " ignore case if search pattern is all lowercase
-set ttyfast " improves redrawing
-set lazyredraw
-set cursorline " highlight current line
+" set ttyfast " improves redrawing
+" set lazyredraw
+" set cursorline " highlight current line
 set wildmode=list:longest " a list of completions will be shown when press tab on the command line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
@@ -61,10 +65,13 @@ set novisualbell " disable visual bell
 set noerrorbells " disable error bells
 set autoread " automatically reload file on change
 set scrolloff=5 " minimum number of screen lines above and below the cursor
+set number " show line numbers
 
 syntax on " turn on syntax highlighting
 set background=dark
 colorscheme base16-monokai " the color scheme (srsly)
+
+" autocmds
 
 " Open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
