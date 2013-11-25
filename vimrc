@@ -11,14 +11,12 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/powerline'
+Bundle 'bling/vim-airline'
 Bundle 'chriskempson/base16-vim'
 Bundle 'nginx.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 
-
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let g:SuperTabDefaultCompletionType = "context"
 
