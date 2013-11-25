@@ -1,5 +1,5 @@
 set nocompatible " turn off Vi compatibility mode
-filetype off " required (to be honest, I don't know why :P)
+filetype off " required by Vundle
 
 " Vundle setup
 set rtp+=~/.vim/bundle/vundle/
