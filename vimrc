@@ -10,8 +10,6 @@ Bundle 'gmarik/vundle'
 " My bundles
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'chriskempson/base16-vim'
@@ -19,9 +17,6 @@ Bundle 'nginx.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
 
-let g:gist_detect_filetype         = 1 " autodetect gist filetype
-let g:gist_open_browser_after_post = 1 " open browser after create a gist
-let g:gist_post_private            = 1 " create private gist by default
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
