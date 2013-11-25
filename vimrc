@@ -18,7 +18,6 @@ Bundle 'chriskempson/base16-vim'
 Bundle 'nginx.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
-Bundle 'thoughtbot/vim-rspec'
 
 let g:gist_detect_filetype         = 1 " autodetect gist filetype
 let g:gist_open_browser_after_post = 1 " open browser after create a gist
@@ -30,7 +29,6 @@ let g:SuperTabDefaultCompletionType = "context"
 
 let g:NERDSpaceDelims = 1 " append an extra space after comment delimiter on NERD Commenter
 
-let g:rspec_command = "!bundle exec rspec --no-color {spec}"
 
 " VIM setup
 set laststatus=2 " always show the status line
@@ -104,10 +102,4 @@ inoremap <down> <nop>
 
 " Switch highlighting back off using <Leader>/
 nnoremap <silent> <leader>/ :set invhlsearch<CR>
-
-" Rspec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
