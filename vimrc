@@ -40,6 +40,10 @@ let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'P'
 let g:airline_symbols.whitespace = 'Ξ'
 
+" scrooloose/syntastic
+let g:syntastic_error_symbol = 'xx'
+let g:syntastic_warning_symbol = '!!'
+
 " VIM setup
 set laststatus=2 " always show the status line
 set encoding=utf-8
