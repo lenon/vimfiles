@@ -27,6 +27,15 @@ let g:NERDSpaceDelims = 1 " append an extra space after comment delimiter
 let g:ctrlp_map = '<leader>p' " open using leader key
 let g:ctrlp_working_path_mode = 0 " disable working directory detection
 
+" bling/vim-airline
+let g:airline_symbols = {}
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'P'
+let g:airline_symbols.whitespace = 'Ξ'
+
 " VIM setup
 set laststatus=2 " always show the status line
 set encoding=utf-8
