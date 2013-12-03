@@ -102,6 +102,8 @@ autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
+autocmd FileType java setlocal shiftwidth=4 tabstop=4
+autocmd FileType eruby setlocal shiftwidth=4 tabstop=4
 
 " Disable arrow keys (omg, dafuq i'm doing)
 noremap <right> <nop>
