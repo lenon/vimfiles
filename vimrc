@@ -75,8 +75,11 @@ set noerrorbells " disable error bells
 set autoread " automatically reload file on change
 set scrolloff=5 " minimum number of screen lines above and below the cursor
 set number " show line numbers
-set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
 set colorcolumn=80,90,100 " show 3 columns on the screen, useful to align text
+
+if version >= 704
+  set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
+endif
 
 syntax on " turn on syntax highlighting
 set background=dark
