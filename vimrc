@@ -15,7 +15,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'chriskempson/base16-vim'
 Bundle 'nginx.vim'
-Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-commentary'
 Bundle 'scrooloose/syntastic'
 
 " ervandew/supertab
