@@ -67,7 +67,7 @@ set hidden " allow Vim to manage multiple buffers effectively
 set tabstop=2 " default tab size
 set shiftwidth=2
 set expandtab " convert tabs to spaces
-set autoindent " self explanatory, huh? (like the most of commands hehe)
+set autoindent " self explanatory, huh?
 set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
 set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
