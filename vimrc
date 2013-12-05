@@ -55,6 +55,9 @@ set undolevels=300 " number of undo levels
 set backupdir=~/.vim/tmp " the directory where the swap/backup files should be stored
 set directory=~/.vim/tmp
 set dir=~/.vim/tmp
+set modeline " respect modeline in files
+set exrc " enable per-directory .vimrc files...
+set secure " ...and disable unsafe commands in them
 set backup " turn on backup
 set noswapfile " turn off swap file
 set title " show the current filename on the window title
