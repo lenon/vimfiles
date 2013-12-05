@@ -75,7 +75,7 @@ set smartcase " ignore case if search pattern is all lowercase
 " set ttyfast " improves redrawing
 " set lazyredraw
 " set cursorline " highlight current line
-set wildmode=list:longest " a list of completions will be shown when press tab on the command line
+set wildmode=longest,list " a list of completions will be shown when press tab on the command line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
 set novisualbell " disable visual bell
