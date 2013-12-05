@@ -70,7 +70,7 @@ set expandtab " convert tabs to spaces
 set autoindent " self explanatory, huh? (like the most of commands hehe)
 set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
-set listchars=tab:→\ ,trail:· " show tabs and trailing spaces
+set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
 set t_Co=256 " the term has 256 colors
 set hlsearch " highlight search
 set incsearch " show matches while typing
