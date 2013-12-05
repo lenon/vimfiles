@@ -127,3 +127,11 @@ inoremap <down> <nop>
 " Switch highlighting back off using <Leader>/
 nnoremap <silent> <leader>/ :set invhlsearch<CR>
 
+" Highlight unwanted spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
