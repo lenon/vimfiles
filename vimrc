@@ -89,6 +89,7 @@ set scrolloff=5 " minimum number of screen lines above and below the cursor
 set sidescrolloff=20 " minimum number of screen columns to keep to the left and to the right of the cursor
 set number " show line numbers
 set colorcolumn=80,90,100 " show 3 columns on the screen, useful to align text
+set textwidth=0 " disable auto line break
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
