@@ -104,7 +104,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Syntax highlight
 autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,*.god,*unicorn.conf* set filetype=ruby
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
-autocmd BufNewFile,BufRead *nginx.conf* set filetype=nginx
+autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
 autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
 
 " Per-file settings
