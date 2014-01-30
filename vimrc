@@ -73,6 +73,7 @@ set hlsearch " highlight search
 set incsearch " show matches while typing
 set ignorecase " ignore case when searching
 set smartcase " ignore case if search pattern is all lowercase
+set completeopt=menuone,preview
 " set ttyfast " improves redrawing
 " set lazyredraw
 " set cursorline " highlight current line
