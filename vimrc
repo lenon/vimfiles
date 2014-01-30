@@ -24,9 +24,6 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 " scrooloose/nerdtree
 let NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 
-" scrooloose/nerdcommenter
-let g:NERDSpaceDelims = 1 " append an extra space after comment delimiter
-
 " kien/ctrlp.vim
 let g:ctrlp_map = '<leader>p' " open using leader key
 let g:ctrlp_working_path_mode = 0 " disable working directory detection
