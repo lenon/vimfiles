@@ -25,7 +25,7 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 let NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 
 " kien/ctrlp.vim
-let g:ctrlp_map = '<leader>p' " open using leader key
+let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
 let g:ctrlp_working_path_mode = 0 " disable working directory detection
 
 " bling/vim-airline
