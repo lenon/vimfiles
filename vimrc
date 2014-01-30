@@ -98,9 +98,6 @@ colorscheme base16-monokai " the color scheme (srsly)
 
 " autocmds
 
-" Open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
-
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
