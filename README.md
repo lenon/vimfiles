@@ -33,30 +33,22 @@ Clone this repository into your home directory:
 
     git clone git://github.com/lenon/.vim.git ~/.vim
 
-`cd` into the repo and then update the submodules:
+Go to the cloned repo and then update submodules:
 
     cd ~/.vim
     git submodule update --init
 
-Add the following line on your ~/.bashrc (or ~/.bash\_profile, ~/.zshrc, etc):
+Link `vimrc` and `gvimrc`:
 
-    alias vim="vim -u ~/.vim/vimrc"
-
-Then source your ~/.bashrc (or reopen your terminal):
-
-    source ~/.bashrc
+    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
 
 Open Vim:
 
     vim
 
-And run...
+And install plugins:
 
     :BundleInstall
 
-(This will install all the plugins)
-
-## TODO
-
- * Increment this README with more information about included plugins;
-
+Restart vim and enjoy. :beer:
