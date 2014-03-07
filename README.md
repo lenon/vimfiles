@@ -27,6 +27,17 @@ my needs, so don't expect to find lots and lots of useless stuff here. :)
 [8]: https://github.com/tpope/vim-commentary
 [9]: https://github.com/scrooloose/syntastic
 
+## iTerm
+
+The color scheme in use is Base16 Monokai. If you want to use vim on terminal, install the following color preset:
+
+[base16-monokai.dark.itermcolors][1]
+
+There are more instructions on [Base16's repository][2].
+
+[1]:https://raw.github.com/chriskempson/base16-iterm2/master/base16-monokai.dark.itermcolors
+[2]:https://github.com/chriskempson/base16-iterm2
+
 ## Instalation
 
 Clone this repository into your home directory:
