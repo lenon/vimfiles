@@ -52,6 +52,28 @@ And install plugins:
 
 Restart vim and enjoy. :beer:
 
+## ctrlp.vim
+
+CtrlP is activated by `<Leader><space>`. Once it is open, you can use the
+following key combinations:
+
+| Map      | Description                                |
+| -------- | ------------------------------------------ |
+| `F5`     | Refresh file list                          |
+| `CTRL+F` | Select next mode                           |
+| `CTRL+B` | Select previous mode                       |
+| `CTRL+D` | Toggle filename only mode                  |
+| `CTRL+R` | Toggle regexp mode                         |
+| `CTRL+P` | Select previous string from search history |
+| `CTRL+N` | Select next string from search history     |
+| `CTRL+T` | Open selected file in a new tab            |
+| `CTRL+X` | Open selected file in a horizontal split   |
+| `CTRL+V` | Open selected file in a vertical split     |
+| `CTRL+Z` | Mark/unmark multiple files                 |
+| `CTRL+O` | Open marked files                          |
+
+You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
+
 [1]: https://github.com/kien/ctrlp.vim
 [2]: https://github.com/ervandew/supertab
 [3]: https://github.com/scrooloose/nerdtree
