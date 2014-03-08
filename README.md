@@ -17,26 +17,13 @@ my needs, so don't expect to find lots and lots of useless stuff here. :)
 | [commentary.vim][8] | Comment code.                                     |
 | [Syntastic][9]      | Syntax checking.                                  |
 
-[1]: https://github.com/kien/ctrlp.vim
-[2]: https://github.com/ervandew/supertab
-[3]: https://github.com/scrooloose/nerdtree
-[4]: https://github.com/tpope/vim-fugitive
-[5]: https://github.com/bling/vim-airline
-[6]: https://github.com/chriskempson/base16-vim
-[7]: http://www.vim.org/scripts/script.php?script_id=1886
-[8]: https://github.com/tpope/vim-commentary
-[9]: https://github.com/scrooloose/syntastic
-
 ## iTerm
 
 The color scheme in use is Base16 Monokai. If you want to use vim on terminal, install the following color preset:
 
-[base16-monokai.dark.itermcolors][1]
+[base16-monokai.dark.itermcolors][10]
 
-There are more instructions on [Base16's repository][2].
-
-[1]:https://raw.github.com/chriskempson/base16-iterm2/master/base16-monokai.dark.itermcolors
-[2]:https://github.com/chriskempson/base16-iterm2
+There are more instructions on [Base16's repository][11].
 
 ## Instalation
 
@@ -63,3 +50,15 @@ And install plugins:
     :BundleInstall
 
 Restart vim and enjoy. :beer:
+
+[1]: https://github.com/kien/ctrlp.vim
+[2]: https://github.com/ervandew/supertab
+[3]: https://github.com/scrooloose/nerdtree
+[4]: https://github.com/tpope/vim-fugitive
+[5]: https://github.com/bling/vim-airline
+[6]: https://github.com/chriskempson/base16-vim
+[7]: http://www.vim.org/scripts/script.php?script_id=1886
+[8]: https://github.com/tpope/vim-commentary
+[9]: https://github.com/scrooloose/syntastic
+[10]: https://raw.github.com/chriskempson/base16-iterm2/master/base16-monokai.dark.itermcolors
+[11]: https://github.com/chriskempson/base16-iterm2
