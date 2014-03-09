@@ -5,7 +5,7 @@ filetype off " required by Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 filetype plugin indent on
-Bundle 'gmarik/Vundle.vim'
+Bundle 'gmarik/vundle'
 
 " My bundles
 Bundle 'kien/ctrlp.vim'
