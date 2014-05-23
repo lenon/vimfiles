@@ -2,21 +2,23 @@ set nocompatible " turn off Vi compatibility mode
 filetype off " required by Vundle
 
 " Vundle setup
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-filetype plugin indent on
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
 " My bundles
-Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
-Bundle 'chriskempson/base16-vim'
-Bundle 'nginx.vim'
-Bundle 'tpope/vim-commentary'
-Bundle 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'chriskempson/base16-vim'
+Plugin 'nginx.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'scrooloose/syntastic'
+
+call vundle#end()
+filetype plugin indent on
 
 " ervandew/supertab
 let g:SuperTabDefaultCompletionType = '<c-n>'
