@@ -12,10 +12,10 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
-Plugin 'chriskempson/base16-vim'
 Plugin 'nginx.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/syntastic'
+Plugin 'sjl/badwolf'
 
 call vundle#end()
 filetype plugin indent on
@@ -100,7 +100,7 @@ endif
 
 syntax on " turn on syntax highlighting
 set background=dark
-colorscheme base16-monokai " the color scheme (srsly)
+colorscheme badwolf " the color scheme (srsly)
 
 " autocmds
 
