@@ -12,7 +12,7 @@ my needs, so don't expect to find lots and lots of useless stuff here. :)
 | [NERD Tree][3]      | File explorer in the form of a tree.              |
 | [fugitive.vim][4]   | Git integration.                                  |
 | [vim-airline][5]    | Awesome status line.                              |
-| [base16-vim][6]     | Base16 colorschemes.                              |
+| [badwolf][6]        | Badwolf colorscheme.                              |
 | [nginx.vim][7]      | Highlights Nginx configuration files.             |
 | [commentary.vim][8] | Comment code.                                     |
 | [Syntastic][9]      | Syntax checking.                                  |
@@ -79,7 +79,7 @@ You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
 [3]: https://github.com/scrooloose/nerdtree
 [4]: https://github.com/tpope/vim-fugitive
 [5]: https://github.com/bling/vim-airline
-[6]: https://github.com/chriskempson/base16-vim
+[6]: https://github.com/sjl/badwolf
 [7]: http://www.vim.org/scripts/script.php?script_id=1886
 [8]: https://github.com/tpope/vim-commentary
 [9]: https://github.com/scrooloose/syntastic
