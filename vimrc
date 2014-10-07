@@ -94,7 +94,6 @@ set textwidth=0 " disable auto line break
 set foldmethod=syntax " folding based on the language
 set foldlevel=20
 set foldlevelstart=20
-set noballooneval " turn off tooltips
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
