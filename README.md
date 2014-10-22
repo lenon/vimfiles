@@ -17,15 +17,6 @@ my needs, so don't expect to find lots and lots of useless stuff here. :)
 | [commentary.vim][8] | Comment code.                                     |
 | [Syntastic][9]      | Syntax checking.                                  |
 
-## iTerm
-
-The color scheme in use is Base16 Monokai. If you want to use vim on terminal,
-install the following color preset:
-
-[base16-monokai.dark.itermcolors][10]
-
-There are more instructions on [Base16's repository][11].
-
 ## Instalation
 
 Clone this repository into your home directory:
