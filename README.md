@@ -5,15 +5,27 @@ don't expect lots and lots of useless stuff here. :smile:
 
 ## Plugins
 
- * [badwolf][6] - Badwolf colorscheme.
- * [commentary.vim][8] - Comment code.
- * [ctrlp.vim][1] - Full path file finder (or Textmate's ⌘T for Vim).
+ * [badwolf][1] - Badwolf colorscheme.
+ * [commentary.vim][2] - Comment code.
+ * [ctrlp.vim][3] - Full path file finder (or Textmate's ⌘T for Vim).
  * [fugitive.vim][4] - Git integration.
- * [NERD Tree][3] - File explorer in the form of a tree.
- * [nginx.vim][7] - Highlights Nginx configuration files.
- * [Supertab][2] - Auto-complete with \<tab\>.
- * [Syntastic][9] - Syntax checking.
- * [vim-airline][5] - Awesome status line.
+ * [NERD Tree][5] - File explorer in the form of a tree.
+ * [nginx.vim][6] - Highlights Nginx configuration files.
+ * [Supertab][7] - Auto-complete with \<tab\>.
+ * [Syntastic][8] - Syntax checking.
+ * [vim-airline][9] - Awesome status line.
+ * [Vundle.vim][10] - The plug-in manager for Vim.
+
+[1]: https://github.com/sjl/badwolf
+[2]: https://github.com/tpope/vim-commentary
+[3]: https://github.com/kien/ctrlp.vim
+[4]: https://github.com/tpope/vim-fugitive
+[5]: https://github.com/scrooloose/nerdtree
+[6]: http://www.vim.org/scripts/script.php?script_id=1886
+[7]: https://github.com/ervandew/supertab
+[8]: https://github.com/scrooloose/syntastic
+[9]: https://github.com/bling/vim-airline
+[10]: https://github.com/gmarik/Vundle.vim
 
 ## Instalation
 
@@ -58,13 +70,3 @@ following key combinations:
 | `CTRL+O` | Open marked files                          |
 
 You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
-
-[1]: https://github.com/kien/ctrlp.vim
-[2]: https://github.com/ervandew/supertab
-[3]: https://github.com/scrooloose/nerdtree
-[4]: https://github.com/tpope/vim-fugitive
-[5]: https://github.com/bling/vim-airline
-[6]: https://github.com/sjl/badwolf
-[7]: http://www.vim.org/scripts/script.php?script_id=1886
-[8]: https://github.com/tpope/vim-commentary
-[9]: https://github.com/scrooloose/syntastic
