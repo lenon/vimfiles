@@ -1,7 +1,7 @@
-# ~/.vim
+# Vimfiles
 
-These are my Vim configuration files. I've created these from scratch to suit
-my needs, so don't expect to find lots and lots of useless stuff here. :)
+These are my Vim files. I've created these from scratch to suit my needs, so
+don't expect lots and lots of useless stuff here. :smile:
 
 ## Plugins
 
