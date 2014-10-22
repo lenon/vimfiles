@@ -138,3 +138,6 @@ nnoremap <silent> <leader>/ :set invhlsearch<CR>
 
 " Highlight unwanted spaces
 match ErrorMsg /\s\+$/
+
+" Toggle NERDTree
+map <leader><return> :NERDTreeToggle<CR>
