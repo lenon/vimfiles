@@ -5,17 +5,15 @@ don't expect lots and lots of useless stuff here. :smile:
 
 ## Plugins
 
-| Plugin name         | Description                                       |
-| ------------------- | ------------------------------------------------- |
-| [ctrlp.vim][1]      | Full path file finder (or Textmate's ⌘T for Vim). |
-| [Supertab][2]       | Auto-complete with \<tab\>.                       |
-| [NERD Tree][3]      | File explorer in the form of a tree.              |
-| [fugitive.vim][4]   | Git integration.                                  |
-| [vim-airline][5]    | Awesome status line.                              |
-| [badwolf][6]        | Badwolf colorscheme.                              |
-| [nginx.vim][7]      | Highlights Nginx configuration files.             |
-| [commentary.vim][8] | Comment code.                                     |
-| [Syntastic][9]      | Syntax checking.                                  |
+ * [ctrlp.vim][1] - Full path file finder (or Textmate's ⌘T for Vim).
+ * [Supertab][2] - Auto-complete with \<tab\>.
+ * [NERD Tree][3] - File explorer in the form of a tree.
+ * [fugitive.vim][4] - Git integration.
+ * [vim-airline][5] - Awesome status line.
+ * [badwolf][6] - Badwolf colorscheme.
+ * [nginx.vim][7] - Highlights Nginx configuration files.
+ * [commentary.vim][8] - Comment code.
+ * [Syntastic][9] - Syntax checking.
 
 ## Instalation
 
