@@ -5,15 +5,15 @@ don't expect lots and lots of useless stuff here. :smile:
 
 ## Plugins
 
- * [ctrlp.vim][1] - Full path file finder (or Textmate's ⌘T for Vim).
- * [Supertab][2] - Auto-complete with \<tab\>.
- * [NERD Tree][3] - File explorer in the form of a tree.
- * [fugitive.vim][4] - Git integration.
- * [vim-airline][5] - Awesome status line.
  * [badwolf][6] - Badwolf colorscheme.
- * [nginx.vim][7] - Highlights Nginx configuration files.
  * [commentary.vim][8] - Comment code.
+ * [ctrlp.vim][1] - Full path file finder (or Textmate's ⌘T for Vim).
+ * [fugitive.vim][4] - Git integration.
+ * [NERD Tree][3] - File explorer in the form of a tree.
+ * [nginx.vim][7] - Highlights Nginx configuration files.
+ * [Supertab][2] - Auto-complete with \<tab\>.
  * [Syntastic][9] - Syntax checking.
+ * [vim-airline][5] - Awesome status line.
 
 ## Instalation
 
@@ -68,5 +68,3 @@ You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
 [7]: http://www.vim.org/scripts/script.php?script_id=1886
 [8]: https://github.com/tpope/vim-commentary
 [9]: https://github.com/scrooloose/syntastic
-[10]: https://raw.github.com/chriskempson/base16-iterm2/master/base16-monokai.dark.itermcolors
-[11]: https://github.com/chriskempson/base16-iterm2
