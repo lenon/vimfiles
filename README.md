@@ -19,17 +19,17 @@ don't expect lots and lots of useless stuff here. :smile:
 
 Clone this repository into your home directory:
 
-    git clone git://github.com/lenon/.vim.git ~/.vim
+    git clone git://github.com/lenon/vimfiles.git ~/vimfiles
 
 Go to the cloned repo and then update submodules:
 
-    cd ~/.vim
+    cd ~/vimfiles
     git submodule update --init
 
 Link `vimrc` and `gvimrc`:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+    ln -s ~/vimfiles/vimrc ~/.vimrc
+    ln -s ~/vimfiles/gvimrc ~/.gvimrc
 
 Open Vim:
 
