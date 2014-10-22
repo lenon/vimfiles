@@ -31,15 +31,11 @@ Link `vimrc` and `gvimrc`:
     ln -s ~/vimfiles/vimrc ~/.vimrc
     ln -s ~/vimfiles/gvimrc ~/.gvimrc
 
-Open Vim:
+Install all plugins:
 
-    vim
+    vim +PluginInstall +qall
 
-And install plugins:
-
-    :BundleInstall
-
-Restart vim and enjoy. :beer:
+Start `vim` and enjoy. :beer:
 
 ## ctrlp.vim
 
