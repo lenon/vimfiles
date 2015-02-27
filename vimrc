@@ -91,7 +91,7 @@ set sidescrolloff=20 " minimum number of screen columns to keep to the left and 
 set number " show line numbers
 set colorcolumn=80,90,100 " show 3 columns on the screen, useful to align text
 set textwidth=0 " disable auto line break
-set foldmethod=syntax " folding based on the language
+set foldmethod=indent " folding based on indentation
 set foldlevel=20
 set foldlevelstart=20
 
