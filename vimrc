@@ -116,9 +116,9 @@ autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
 
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
-autocmd FileType html setlocal shiftwidth=4 tabstop=4
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType java setlocal shiftwidth=4 tabstop=4
-autocmd FileType eruby setlocal shiftwidth=4 tabstop=4
+autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
 autocmd FileType go setlocal shiftwidth=4 tabstop=4
 
