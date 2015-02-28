@@ -113,6 +113,8 @@ autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,*.god,
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
 autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
 autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
+autocmd BufNewFile,BufRead *.rabl set filetype=ruby
+autocmd BufNewFile,BufRead *.jbuilder set filetype=ruby
 
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
