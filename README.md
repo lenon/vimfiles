@@ -3,6 +3,11 @@
 These are my Vim files. I created them over the time to suit my needs, so don't
 expect lots and lots of useless stuff here. :smile:
 
+## Requirements
+
+Vim 7.4. Tested on Mac OS X with both MacVim and command-line Vim, but it should
+work on other environments without problems.
+
 ## Included plugins
 
  * [badwolf][1] - Badwolf colorscheme.
