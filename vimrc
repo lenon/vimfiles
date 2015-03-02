@@ -52,9 +52,9 @@ set showcmd " show commands on status line
 set nowrap " disable automatic word wrapping
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
-set backupdir=~/.vim/tmp " the directory where the swap/backup files should be stored
-set directory=~/.vim/tmp
-set dir=~/.vim/tmp
+set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should be stored
+set directory=~/vimfiles/tmp
+set dir=~/vimfiles/tmp
 set modeline " respect modeline in files
 set exrc " enable per-directory .vimrc files...
 set secure " ...and disable unsafe commands in them
