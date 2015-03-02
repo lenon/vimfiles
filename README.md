@@ -1,9 +1,9 @@
 # Vimfiles
 
-These are my Vim files. I've created these from scratch to suit my needs, so
-don't expect lots and lots of useless stuff here. :smile:
+These are my Vim files. I created them over the time to suit my needs, so don't
+expect lots and lots of useless stuff here. :smile:
 
-## Plugins
+## Included plugins
 
  * [badwolf][1] - Badwolf colorscheme.
  * [commentary.vim][2] - Comment code.
