@@ -34,7 +34,7 @@ work on other environments without problems.
 
 ## Instalation
 
-Clone this repository into your home directory:
+Clone this repo into your home directory:
 
     git clone git://github.com/lenon/vimfiles.git ~/vimfiles
 
@@ -43,16 +43,16 @@ Go to the cloned repo and then update submodules:
     cd ~/vimfiles
     git submodule update --init
 
-Link `vimrc` and `gvimrc`:
+Link `vimrc` for command-line Vim and `gvimrc` for MacVim:
 
     ln -s ~/vimfiles/vimrc ~/.vimrc
     ln -s ~/vimfiles/gvimrc ~/.gvimrc
 
-Install all plugins:
+Install all plugins using Vundle.vim (it is normal to see some warnings here):
 
     vim +PluginInstall +qall
 
-Start `vim` and enjoy. :beer:
+Start `vim` and enjoy! :beer:
 
 ## ctrlp.vim
 
