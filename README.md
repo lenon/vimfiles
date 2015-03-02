@@ -32,7 +32,7 @@ work on other environments without problems.
 [9]: https://github.com/bling/vim-airline
 [10]: https://github.com/gmarik/Vundle.vim
 
-## Instalation
+## Installation
 
 Clone this repo into your home directory:
 
