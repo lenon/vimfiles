@@ -94,6 +94,7 @@ set textwidth=0 " disable auto line break
 set foldmethod=indent " folding based on indentation
 set foldlevel=20
 set foldlevelstart=20
+set clipboard=unnamed " use system clipboard
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
