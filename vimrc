@@ -53,9 +53,6 @@ set exrc " enable per-directory .vimrc files...
 set secure " ...and disable unsafe commands in them
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
 set hidden " allow Vim to manage multiple buffers effectively
-set tabstop=2 " default tab size
-set shiftwidth=2
-set expandtab " convert tabs to spaces
 set autoindent " self explanatory, huh?
 set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
@@ -99,6 +96,11 @@ set ruler " show the cursor position on status line
 set showcmd " show commands on status line
 set title " show the current filename on the window title
 set wildmode=longest,list " a list of completions will be shown when press tab on the command line
+
+" Tabs
+set expandtab " convert tabs to spaces
+set shiftwidth=2
+set tabstop=2 " default tab size
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
