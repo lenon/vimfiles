@@ -17,6 +17,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/syntastic'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'morhetz/gruvbox'
+Plugin 'tacahiroy/ctrlp-funky'
 
 call vundle#end()
 filetype plugin indent on
@@ -141,3 +142,6 @@ nnoremap <silent> <leader>/ :set invhlsearch<CR>
 
 " Toggle NERDTree
 map <leader><return> :NERDTreeToggle<CR>
+
+" Toggle CtrlPFunky
+nnoremap <Leader>f :CtrlPFunky<CR>
