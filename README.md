@@ -21,17 +21,6 @@ work on other environments without problems.
  * [vim-airline][9] - Awesome status line.
  * [Vundle.vim][10] - The plug-in manager for Vim.
 
-[1]: https://github.com/sjl/badwolf
-[2]: https://github.com/tpope/vim-commentary
-[3]: https://github.com/kien/ctrlp.vim
-[4]: https://github.com/tpope/vim-fugitive
-[5]: https://github.com/scrooloose/nerdtree
-[6]: http://www.vim.org/scripts/script.php?script_id=1886
-[7]: https://github.com/ervandew/supertab
-[8]: https://github.com/scrooloose/syntastic
-[9]: https://github.com/bling/vim-airline
-[10]: https://github.com/gmarik/Vundle.vim
-
 ## Installation
 
 Clone this repo into your home directory:
@@ -75,3 +64,14 @@ following key combinations:
 | `CTRL+O` | Open marked files                          |
 
 You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
+
+[1]: https://github.com/sjl/badwolf
+[2]: https://github.com/tpope/vim-commentary
+[3]: https://github.com/kien/ctrlp.vim
+[4]: https://github.com/tpope/vim-fugitive
+[5]: https://github.com/scrooloose/nerdtree
+[6]: http://www.vim.org/scripts/script.php?script_id=1886
+[7]: https://github.com/ervandew/supertab
+[8]: https://github.com/scrooloose/syntastic
+[9]: https://github.com/bling/vim-airline
+[10]: https://github.com/gmarik/Vundle.vim
