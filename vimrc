@@ -16,7 +16,7 @@ Plugin 'nginx.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/syntastic'
 Plugin 'jnwhiteh/vim-golang'
-Plugin 'sjl/badwolf'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin indent on
@@ -102,7 +102,7 @@ endif
 
 syntax on " turn on syntax highlighting
 set background=dark
-colorscheme badwolf " the color scheme (srsly)
+colorscheme gruvbox " the color scheme (srsly)
 
 " autocmds
 
