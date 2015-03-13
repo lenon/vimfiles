@@ -10,16 +10,16 @@ work on other environments without problems.
 
 ## Included plugins
 
- * [badwolf][1] - Badwolf colorscheme.
- * [commentary.vim][2] - Comment code.
- * [ctrlp.vim][3] - Full path file finder (or Textmate's ⌘T for Vim).
- * [fugitive.vim][4] - Git integration.
- * [NERD Tree][5] - File explorer in the form of a tree.
- * [nginx.vim][6] - Highlights Nginx configuration files.
- * [Supertab][7] - Auto-complete with \<tab\>.
- * [Syntastic][8] - Syntax checking.
- * [vim-airline][9] - Awesome status line.
- * [Vundle.vim][10] - The plug-in manager for Vim.
+ * [badwolf][badwolf] - Badwolf colorscheme.
+ * [commentary.vim][commentary] - Comment code.
+ * [ctrlp.vim][ctrlp] - Full path file finder (or Textmate's ⌘T for Vim).
+ * [fugitive.vim][fugitive] - Git integration.
+ * [NERD Tree][nerdtree] - File explorer in the form of a tree.
+ * [nginx.vim][nginx.vim] - Highlights Nginx configuration files.
+ * [Supertab][supertab] - Auto-complete with \<tab\>.
+ * [Syntastic][syntastic] - Syntax checking.
+ * [vim-airline][airline] - Awesome status line.
+ * [Vundle.vim][vundle] - The plug-in manager for Vim.
 
 ## Installation
 
@@ -65,13 +65,13 @@ following key combinations:
 
 You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
 
-[1]: https://github.com/sjl/badwolf
-[2]: https://github.com/tpope/vim-commentary
-[3]: https://github.com/kien/ctrlp.vim
-[4]: https://github.com/tpope/vim-fugitive
-[5]: https://github.com/scrooloose/nerdtree
-[6]: http://www.vim.org/scripts/script.php?script_id=1886
-[7]: https://github.com/ervandew/supertab
-[8]: https://github.com/scrooloose/syntastic
-[9]: https://github.com/bling/vim-airline
-[10]: https://github.com/gmarik/Vundle.vim
+[badwolf]: https://github.com/sjl/badwolf
+[commentary]: https://github.com/tpope/vim-commentary
+[ctrlp]: https://github.com/kien/ctrlp.vim
+[fugitive]: https://github.com/tpope/vim-fugitive
+[nerdtree]: https://github.com/scrooloose/nerdtree
+[nginx.vim]: http://www.vim.org/scripts/script.php?script_id=1886
+[supertab]: https://github.com/ervandew/supertab
+[syntastic]: https://github.com/scrooloose/syntastic
+[airline]: https://github.com/bling/vim-airline
+[vundle]: https://github.com/gmarik/Vundle.vim
