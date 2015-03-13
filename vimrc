@@ -88,7 +88,6 @@ set clipboard=unnamed " use system clipboard
 set backup " turn on backup
 set noswapfile " turn off swap file
 set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should be stored
-set dir=~/vimfiles/tmp
 set directory=~/vimfiles/tmp
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
