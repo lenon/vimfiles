@@ -46,10 +46,7 @@ let g:syntastic_error_symbol = 'xx'
 let g:syntastic_warning_symbol = '!!'
 
 " VIM setup
-set laststatus=2 " always show the status line
 set encoding=utf-8
-set noshowmode " do not show current mode on status line
-set showcmd " show commands on status line
 set nowrap " disable automatic word wrapping
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
@@ -61,9 +58,7 @@ set exrc " enable per-directory .vimrc files...
 set secure " ...and disable unsafe commands in them
 set backup " turn on backup
 set noswapfile " turn off swap file
-set title " show the current filename on the window title
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
-set ruler " show the cursor position on status line
 set hidden " allow Vim to manage multiple buffers effectively
 set tabstop=2 " default tab size
 set shiftwidth=2
@@ -81,7 +76,6 @@ set completeopt=menuone,preview
 " set ttyfast " improves redrawing
 " set lazyredraw
 " set cursorline " highlight current line
-set wildmode=longest,list " a list of completions will be shown when press tab on the command line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
 set novisualbell " disable visual bell
@@ -96,6 +90,14 @@ set foldmethod=indent " folding based on indentation
 set foldlevel=20
 set foldlevelstart=20
 set clipboard=unnamed " use system clipboard
+
+" Status and command line
+set laststatus=2 " always show the status line
+set noshowmode " do not show current mode on status line
+set ruler " show the cursor position on status line
+set showcmd " show commands on status line
+set title " show the current filename on the window title
+set wildmode=longest,list " a list of completions will be shown when press tab on the command line
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
