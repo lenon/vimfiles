@@ -48,16 +48,9 @@ let g:syntastic_warning_symbol = '!!'
 " VIM setup
 set encoding=utf-8
 set nowrap " disable automatic word wrapping
-set history=300 " number of commands saved in the history list
-set undolevels=300 " number of undo levels
-set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should be stored
-set directory=~/vimfiles/tmp
-set dir=~/vimfiles/tmp
 set modeline " respect modeline in files
 set exrc " enable per-directory .vimrc files...
 set secure " ...and disable unsafe commands in them
-set backup " turn on backup
-set noswapfile " turn off swap file
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
 set hidden " allow Vim to manage multiple buffers effectively
 set tabstop=2 " default tab size
@@ -90,6 +83,15 @@ set foldmethod=indent " folding based on indentation
 set foldlevel=20
 set foldlevelstart=20
 set clipboard=unnamed " use system clipboard
+
+" Backup, history and swap files
+set backup " turn on backup
+set noswapfile " turn off swap file
+set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should be stored
+set dir=~/vimfiles/tmp
+set directory=~/vimfiles/tmp
+set history=300 " number of commands saved in the history list
+set undolevels=300 " number of undo levels
 
 " Status and command line
 set laststatus=2 " always show the status line
