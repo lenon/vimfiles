@@ -58,10 +58,6 @@ set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
 set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
 set t_Co=256 " the term has 256 colors
-set hlsearch " highlight search
-set incsearch " show matches while typing
-set ignorecase " ignore case when searching
-set smartcase " ignore case if search pattern is all lowercase
 set completeopt=menuone,preview
 " set ttyfast " improves redrawing
 " set lazyredraw
@@ -88,6 +84,12 @@ set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should 
 set directory=~/vimfiles/tmp
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
+
+" Search
+set hlsearch " highlight search
+set ignorecase " ignore case when searching
+set incsearch " show matches while typing
+set smartcase " ignore case if search pattern is all lowercase
 
 " Status and command line
 set laststatus=2 " always show the status line
