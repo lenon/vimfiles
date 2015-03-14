@@ -106,6 +106,7 @@ set softtabstop=2
 set shiftwidth=2 " number of spaces to use for indentation
 
 " Folds
+set nofoldenable " open all folds by default
 set foldlevel=20
 set foldlevelstart=20
 set foldmethod=indent " folding based on indentation
