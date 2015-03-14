@@ -105,6 +105,7 @@ set wildmode=longest,list " complete longest common string and list alternatives
 set expandtab " convert tabs to spaces
 set tabstop=2 " default tab size
 set softtabstop=2
+set shiftwidth=2 " number of spaces to use for indentation
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
