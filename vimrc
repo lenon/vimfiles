@@ -125,7 +125,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " Ruby
 autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,
-  \*.god,*unicorn.conf*,*.rabl,*.jbuilder set filetype=ruby
+  \*.god,*.rabl,*.jbuilder set filetype=ruby
 autocmd FileType eruby setlocal shiftwidth=2 softtabstop=2
 
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
