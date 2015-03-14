@@ -79,6 +79,7 @@ set clipboard=unnamed " use system clipboard
 
 " Backup, history and swap files
 set backup " turn on backup
+set writebackup
 set noswapfile " turn off swap file
 set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should be stored
 set directory=~/vimfiles/tmp
