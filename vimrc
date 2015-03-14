@@ -98,7 +98,8 @@ set noshowmode " do not show current mode on status line
 set ruler " show the cursor position on status line
 set showcmd " show commands on status line
 set title " show the current filename on the window title
-set wildmode=longest,list " a list of completions will be shown when press tab on the command line
+set wildmenu " enable autocomplete on command line
+set wildmode=longest,list " complete longest common string and list alternatives
 
 " Tabs
 set expandtab " convert tabs to spaces
