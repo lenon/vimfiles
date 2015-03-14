@@ -121,19 +121,20 @@ colorscheme gruvbox " the color scheme (srsly)
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" Syntax highlight
-autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,*.god,*unicorn.conf* set filetype=ruby
+" Syntax highlight and per lang settings
+
+" Ruby
+autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,
+  \*.god,*unicorn.conf*,*.rabl,*.jbuilder set filetype=ruby
+autocmd FileType eruby setlocal shiftwidth=2 softtabstop=2
+
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
 autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
-autocmd BufNewFile,BufRead *unicorn.conf* set filetype=ruby
-autocmd BufNewFile,BufRead *.rabl set filetype=ruby
-autocmd BufNewFile,BufRead *.jbuilder set filetype=ruby
 
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType java setlocal shiftwidth=4 tabstop=4
-autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
 autocmd FileType go setlocal shiftwidth=4 tabstop=4
 
