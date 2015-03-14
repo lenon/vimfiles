@@ -73,9 +73,6 @@ set sidescrolloff=20 " minimum number of screen columns to keep to the left and 
 set number " show line numbers
 set colorcolumn=80 " show a column on screen that is useful to align text
 set textwidth=0 " disable auto line break
-set foldmethod=indent " folding based on indentation
-set foldlevel=20
-set foldlevelstart=20
 set clipboard=unnamed " use system clipboard
 
 " Backup, history and swap files
@@ -107,6 +104,11 @@ set expandtab " convert tabs to spaces
 set tabstop=2 " default tab size
 set softtabstop=2
 set shiftwidth=2 " number of spaces to use for indentation
+
+" Folds
+set foldlevel=20
+set foldlevelstart=20
+set foldmethod=indent " folding based on indentation
 
 if version >= 704
   set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
