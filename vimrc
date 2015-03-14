@@ -18,6 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'morhetz/gruvbox'
 Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'sjl/gundo.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -155,3 +156,6 @@ map <leader><return> :NERDTreeToggle<CR>
 
 " Toggle CtrlPFunky
 nnoremap <Leader>f :CtrlPFunky<CR>
+
+" Toggle gundo.vim
+nnoremap <leader>u :GundoToggle<CR>
