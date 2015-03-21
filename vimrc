@@ -62,7 +62,7 @@ set t_Co=256 " the term has 256 colors
 set completeopt=menuone,preview
 " set ttyfast " improves redrawing
 " set lazyredraw
-set cursorline " highlight current line
+" set cursorline " highlight current line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
 set novisualbell " disable visual bell
