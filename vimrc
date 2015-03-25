@@ -133,6 +133,7 @@ autocmd FileType eruby setlocal shiftwidth=2 softtabstop=2
 
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
 autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
+autocmd BufNewFile,BufRead *.json setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 " Per-file settings
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
