@@ -10,16 +10,18 @@ work on other environments without problems.
 
 ## Included plugins
 
- * [badwolf][badwolf] - Badwolf colorscheme.
- * [commentary.vim][commentary] - Comment code.
- * [ctrlp.vim][ctrlp] - Full path file finder (or Textmate's ⌘T for Vim).
- * [fugitive.vim][fugitive] - Git integration.
- * [NERD Tree][nerdtree] - File explorer in the form of a tree.
- * [nginx.vim][nginx.vim] - Highlights Nginx configuration files.
- * [Supertab][supertab] - Auto-complete with \<tab\>.
- * [Syntastic][syntastic] - Syntax checking.
- * [vim-airline][airline] - Awesome status line.
- * [Vundle.vim][vundle] - The plug-in manager for Vim.
+* [Vundle.vim] - The plug-in manager for Vim.
+* [ctrlp-funky] - Navigate and jump to function definitions.
+* [ctrlp.vim] - Full path file finder (or Textmate's ⌘T for Vim).
+* [gruvbox] - Retro groove color scheme for Vim.
+* [gundo.vim] - Plugin to visualize your Vim undo tree.
+* [nerdtree] - File explorer in the form of a tree.
+* [nginx.vim] - Highlights Nginx configuration files.
+* [supertab] - Auto-complete with \<tab\>.
+* [syntastic] - Syntax checking.
+* [vim-airline] - Awesome status line.
+* [vim-commentary] - Comment code.
+* [vim-fugitive] - Git integration.
 
 ## Installation
 
@@ -65,13 +67,15 @@ following key combinations:
 
 You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
 
-[badwolf]: https://github.com/sjl/badwolf
-[commentary]: https://github.com/tpope/vim-commentary
-[ctrlp]: https://github.com/kien/ctrlp.vim
-[fugitive]: https://github.com/tpope/vim-fugitive
+[Vundle.vim]: https://github.com/gmarik/Vundle.vim
+[ctrlp-funky]: https://github.com/tacahiroy/ctrlp-funky
+[ctrlp.vim]: https://github.com/kien/ctrlp.vim
+[gruvbox]: https://github.com/morhetz/gruvbox
+[gundo.vim]: https://github.com/sjl/gundo.vim
 [nerdtree]: https://github.com/scrooloose/nerdtree
 [nginx.vim]: http://www.vim.org/scripts/script.php?script_id=1886
 [supertab]: https://github.com/ervandew/supertab
 [syntastic]: https://github.com/scrooloose/syntastic
-[airline]: https://github.com/bling/vim-airline
-[vundle]: https://github.com/gmarik/Vundle.vim
+[vim-airline]: https://github.com/bling/vim-airline
+[vim-commentary]: https://github.com/tpope/vim-commentary
+[vim-fugitive]: https://github.com/tpope/vim-fugitive
