@@ -4,7 +4,7 @@ filetype off " required by Vundle
 " Vundle setup
 set rtp+=~/vimfiles/bundle/Vundle.vim
 call vundle#begin('~/vimfiles/bundle')
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " My bundles
 Plugin 'ctrlpvim/ctrlp.vim'
