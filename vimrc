@@ -2,11 +2,11 @@ set nocompatible " turn off Vi compatibility mode
 filetype off " required by Vundle
 
 " Vundle setup
-set rtp+=~/vimfiles/bundle/Vundle.vim
-call vundle#begin('~/vimfiles/bundle')
-Plugin 'VundleVim/Vundle.vim'
+set rtp+=~/vimfiles/bundle/Vundle.vim " set the runtime path to include Vundle
+call vundle#begin('~/vimfiles/bundle') " initialize Vundle
+Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
 
-" My bundles
+" My plugins
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
@@ -19,8 +19,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'sjl/gundo.vim'
 
-call vundle#end()
-filetype plugin indent on
+call vundle#end() " required by Vundle
+filetype plugin indent on " required by Vundle
 
 " ervandew/supertab
 let g:SuperTabDefaultCompletionType = '<c-n>'
