@@ -1,6 +1,6 @@
 # Vimfiles
 
-These are my Vim files. I created them over the time to suit my needs, so don't
+These are my Vim files. I created them over time to suit my needs, so don't
 expect lots and lots of useless stuff here. :smile:
 
 ## Requirements
