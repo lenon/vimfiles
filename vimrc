@@ -35,13 +35,30 @@ let g:ctrlp_working_path_mode = 0 " disable working directory detection
 
 " bling/vim-airline
 let g:airline_symbols = {}
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '¶'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.linenr = ''
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'P'
 let g:airline_symbols.whitespace = 'Ξ'
-let g:airline#extensions#tabline#enabled = 1
+
+let g:airline#extensions#tabline#enabled = 1 " enable tabline extension
+let g:airline#extensions#tabline#show_tabs = 1 " always show tabs
+let g:airline#extensions#tabline#show_tab_nr = 0 " do not display tab number
+let g:airline#extensions#tabline#show_buffers = 0 " do not display buffers as tabs
+
+" override mode mapping
+let g:airline_mode_map = {
+      \ 'n' : 'N',
+      \ 'i' : 'I',
+      \ 'R' : 'R',
+      \ 'v' : 'V',
+      \ 'V' : 'VL',
+      \ '' : 'VB',
+      \ }
+
+" show only line and column number in the last section
+let g:airline_section_z = airline#section#create(['linenr', ':%3v'])
 
 " scrooloose/syntastic
 let g:syntastic_error_symbol = 'xx'
