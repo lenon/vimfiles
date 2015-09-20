@@ -46,6 +46,8 @@ let g:airline#extensions#tabline#enabled = 1 " enable tabline extension
 let g:airline#extensions#tabline#show_tabs = 1 " always show tabs
 let g:airline#extensions#tabline#show_tab_nr = 0 " do not display tab number
 let g:airline#extensions#tabline#show_buffers = 0 " do not display buffers as tabs
+let g:airline#extensions#tabline#show_close_button = 0 " do not show close button
+let g:airline#extensions#tabline#show_tab_type = 0 " do not diplay tab type (tab or buffer)
 
 " override mode mapping
 let g:airline_mode_map = {
