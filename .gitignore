@@ -7,3 +7,5 @@ bundle/*
 !bundle/vundle
 !bundle/vundle/*
 .DS_Store
+cache/*
+!cache/.gitkeep

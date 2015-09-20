@@ -29,9 +29,14 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 let NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 let NERDTreeShowHidden = 1 " display hidden files
 
-" kien/ctrlp.vim
+" ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
 let g:ctrlp_working_path_mode = 0 " disable working directory detection
+let g:ctrlp_by_filename = 1 " search by filename and not full path
+let g:ctrlp_match_window = 'bottom,order:btt,min:5,max:15,results:15' " increase the max number of results
+let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
+let g:ctrlp_cache_dir = '~/vimfiles/cache'
+let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
 
 " bling/vim-airline
 let g:airline_symbols = {}
