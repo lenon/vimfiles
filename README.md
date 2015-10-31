@@ -27,7 +27,7 @@ work on other environments without problems.
 
 Clone this repo into your home directory:
 
-    git clone git://github.com/lenon/vimfiles.git ~/vimfiles
+    git clone --recursive git://github.com/lenon/vimfiles.git ~/vimfiles
 
 Go to the cloned repo and then update submodules:
 
