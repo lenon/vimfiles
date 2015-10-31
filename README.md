@@ -29,19 +29,10 @@ Clone this repo into your home directory:
 
     git clone --recursive git://github.com/lenon/vimfiles.git ~/vimfiles
 
-Go to the cloned repo and then update submodules:
+Then execute the installation script:
 
-    cd ~/vimfiles
-    git submodule update --init
-
-Link `vimrc` for command-line Vim and `gvimrc` for MacVim:
-
-    ln -s ~/vimfiles/vimrc ~/.vimrc
-    ln -s ~/vimfiles/gvimrc ~/.gvimrc
-
-Install all plugins using Vundle.vim (it is normal to see some warnings here):
-
-    vim +PluginInstall +qall
+    cd ~/Vimfiles
+    ./install.sh
 
 Start `vim` and enjoy! :beer:
 
