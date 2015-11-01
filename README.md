@@ -1,12 +1,12 @@
 # Vimfiles
 
-These are my Vim files. I created them over time to suit my needs, so don't
-expect lots and lots of useless stuff here. :smile:
+These are my Vim configuration files. I created them over time to suit my needs,
+so don't expect lots and lots of useless stuff here. :smile:
 
 ## Requirements
 
-Vim 7.4. Tested on Mac OS X with both MacVim and command-line Vim, but it should
-work on other environments without problems.
+Vim 7.4. I'm currently using Vim in the command-line on a Mac OS X, but this
+configuration should work on other environments without problems.
 
 ## Included plugins
 
