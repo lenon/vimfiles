@@ -10,18 +10,7 @@ configuration should work on other environments without problems.
 
 ## Included plugins
 
-* [Vundle.vim] - The plug-in manager for Vim.
-* [ctrlp-funky] - Navigate and jump to function definitions.
-* [ctrlp.vim] - Full path file finder (or Textmate's ⌘T for Vim).
-* [gruvbox] - Retro groove color scheme for Vim.
-* [gundo.vim] - Plugin to visualize your Vim undo tree.
-* [nerdtree] - File explorer in the form of a tree.
-* [nginx.vim] - Highlights Nginx configuration files.
-* [supertab] - Auto-complete with \<tab\>.
-* [syntastic] - Syntax checking.
-* [vim-airline] - Awesome status line.
-* [vim-commentary] - Comment code.
-* [vim-fugitive] - Git integration.
+See [PLUGINS.md](PLUGINS.md).
 
 ## Installation
 
