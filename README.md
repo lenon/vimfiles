@@ -5,8 +5,9 @@ so don't expect lots and lots of useless stuff here. :smile:
 
 ## Requirements
 
-Vim 7.4. I'm currently using Vim in the command-line on a Mac OS X, but this
-configuration should work on other environments without problems.
+Vim 7.4 is the only requirement. I'm currently using Vim in the command-line on
+a Mac OS X, but this configuration should work on other environments without
+problems.
 
 ## Included plugins
 
@@ -20,8 +21,7 @@ Clone this repo into your home directory:
 
 Then execute the installation script:
 
-    cd ~/Vimfiles
-    ./install.sh
+    ~/vimfiles/scripts/install.sh
 
 Start `vim` and enjoy! :beer:
 
