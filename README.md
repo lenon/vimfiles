@@ -46,16 +46,3 @@ following key combinations:
 | `CTRL+O` | Open marked files                          |
 
 You can run `:help ctrlp-mappings` for more information about CtrlP key maps.
-
-[Vundle.vim]: https://github.com/gmarik/Vundle.vim
-[ctrlp-funky]: https://github.com/tacahiroy/ctrlp-funky
-[ctrlp.vim]: https://github.com/kien/ctrlp.vim
-[gruvbox]: https://github.com/morhetz/gruvbox
-[gundo.vim]: https://github.com/sjl/gundo.vim
-[nerdtree]: https://github.com/scrooloose/nerdtree
-[nginx.vim]: http://www.vim.org/scripts/script.php?script_id=1886
-[supertab]: https://github.com/ervandew/supertab
-[syntastic]: https://github.com/scrooloose/syntastic
-[vim-airline]: https://github.com/bling/vim-airline
-[vim-commentary]: https://github.com/tpope/vim-commentary
-[vim-fugitive]: https://github.com/tpope/vim-fugitive
