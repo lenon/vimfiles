@@ -28,6 +28,7 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 " scrooloose/nerdtree
 let NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 let NERDTreeShowHidden = 1 " display hidden files
+let NERDTreeWinPos = 'right'
 
 " ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
