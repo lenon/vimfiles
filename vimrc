@@ -69,8 +69,9 @@ let g:airline_mode_map = {
 let g:airline_section_z = airline#section#create(['linenr', ':%3v'])
 
 " scrooloose/syntastic
-let g:syntastic_error_symbol = 'x>'
-let g:syntastic_warning_symbol = '!>'
+let g:syntastic_error_symbol = 'E>'
+let g:syntastic_warning_symbol = 'W>'
+let g:syntastic_stl_format = '%E{E: %fe}%B{|}%W{W: %fw}'
 
 " VIM setup
 set encoding=utf-8
