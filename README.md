@@ -25,6 +25,13 @@ Then execute the installation script:
 
 Start `vim` and enjoy! :beer:
 
+## iTerm 2
+
+To get precise colors, please use the
+[gruvbox colorscheme for iTerm][gruvbox-iterm].
+
+[gruvbox-iterm]: https://raw.githubusercontent.com/morhetz/gruvbox-contrib/master/iterm2/gruvbox-dark.itermcolors
+
 ## ctrlp.vim
 
 CtrlP is activated by `<Leader><space>`. Once it is open, you can use the
