@@ -10,7 +10,6 @@ Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'nginx.vim'
 Plugin 'tpope/vim-commentary'
