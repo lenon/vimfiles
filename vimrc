@@ -64,8 +64,8 @@ let g:airline_mode_map = {
       \ '' : 'VB',
       \ }
 
-" show only line and column number in the last section
-let g:airline_section_z = airline#section#create(['linenr', ':%3v'])
+" disable the last airline section
+let g:airline_section_z = ''
 
 " scrooloose/syntastic
 let g:syntastic_error_symbol = 'E>'
