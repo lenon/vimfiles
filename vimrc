@@ -1,9 +1,13 @@
+" get the current directory of this script (usually ~/vimfiles)
+let $VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+
 set nocompatible " turn off Vi compatibility mode
 filetype off " required by Vundle
 
 " Vundle setup
-set rtp+=~/vimfiles/bundle/Vundle.vim " set the runtime path to include Vundle
-call vundle#begin('~/vimfiles/bundle') " initialize Vundle
+set rtp+=$VIMHOME/bundle/Vundle.vim " include Vundle into the runtime path
+call vundle#begin($VIMHOME . '/bundle') " initialize Vundle
+
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
 
 " My plugins
@@ -21,6 +25,10 @@ Plugin 'sjl/gundo.vim'
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
 
+" include ~/vimfiles into the runtime path
+" must be called after Vundle setup
+set rtp+=$VIMHOME
+
 " ervandew/supertab
 let g:SuperTabDefaultCompletionType = '<c-n>'
 
@@ -34,7 +42,7 @@ let g:ctrlp_working_path_mode = 0 " disable working directory detection
 let g:ctrlp_by_filename = 1 " search by filename and not full path
 let g:ctrlp_match_window = 'bottom,order:btt,min:5,max:15,results:15' " increase the max number of results
 let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
-let g:ctrlp_cache_dir = '~/vimfiles/cache'
+let g:ctrlp_cache_dir = $VIMHOME . '/cache'
 let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
 
 " bling/vim-airline
@@ -107,8 +115,8 @@ set fillchars+=vert:\ " set an empty space as window separator
 set backup " turn on backup
 set writebackup
 set swapfile " turn on swap file
-set backupdir=~/vimfiles/tmp " the directory where the swap/backup files should be stored
-set directory=~/vimfiles/tmp
+set backupdir=$VIMHOME/tmp " the directory where the swap/backup files should be stored
+set directory=$VIMHOME/tmp
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
 
