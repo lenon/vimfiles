@@ -113,10 +113,12 @@ set fillchars+=vert:\ " set an empty space as window separator
 
 " Backup, history and swap files
 set backup " turn on backup
-set writebackup
-set swapfile " turn on swap file
-set backupdir=$VIMHOME/tmp/backup " the directory where backup files should be stored
-set directory=$VIMHOME/tmp/swap
+set writebackup " make a backup before overwriting a file
+set swapfile " turn on swap
+set backupdir=$VIMHOME/tmp/backup// " directory names for the backup files
+" double slashes "//" at the end of directory means that file names will be
+" built using the complete path
+set directory=$VIMHOME/tmp/swap// " directory names for the swap file
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
 
