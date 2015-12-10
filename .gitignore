@@ -2,7 +2,15 @@
 *~
 *.swp
 tmp/*
-!tmp/.gitkeep
+!tmp/backup
+!tmp/cache
+!tmp/swap
+tmp/backup/*
+tmp/cache/*
+tmp/swap/*
+!tmp/backup/.gitkeep
+!tmp/cache/.gitkeep
+!tmp/swap/.gitkeep
 .DS_Store
 cache/*
 !cache/.gitkeep

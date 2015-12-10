@@ -42,7 +42,7 @@ let g:ctrlp_working_path_mode = 0 " disable working directory detection
 let g:ctrlp_by_filename = 1 " search by filename and not full path
 let g:ctrlp_match_window = 'bottom,order:btt,min:5,max:15,results:15' " increase the max number of results
 let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
-let g:ctrlp_cache_dir = $VIMHOME . '/cache'
+let g:ctrlp_cache_dir = $VIMHOME . '/tmp/cache'
 let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
 
 " bling/vim-airline
@@ -115,8 +115,8 @@ set fillchars+=vert:\ " set an empty space as window separator
 set backup " turn on backup
 set writebackup
 set swapfile " turn on swap file
-set backupdir=$VIMHOME/tmp " the directory where the swap/backup files should be stored
-set directory=$VIMHOME/tmp
+set backupdir=$VIMHOME/tmp/backup " the directory where backup files should be stored
+set directory=$VIMHOME/tmp/swap
 set history=300 " number of commands saved in the history list
 set undolevels=300 " number of undo levels
 
