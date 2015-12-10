@@ -193,3 +193,5 @@ nnoremap <Leader>f :CtrlPFunky<CR>
 
 " Toggle gundo.vim
 nnoremap <leader>u :GundoToggle<CR>
+
+nnoremap <leader>. :call SpecAlternate()<cr>
