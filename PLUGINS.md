@@ -4,7 +4,6 @@
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
 * [supertab](https://github.com/ervandew/supertab)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
-* [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-airline](https://github.com/bling/vim-airline)
 * [nginx.vim](https://github.com/nginx.vim)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
