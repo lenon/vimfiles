@@ -167,17 +167,6 @@ colorscheme gruvbox " the color scheme (srsly)
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" Syntax highlight and per lang settings
-
-" Ruby
-autocmd BufNewFile,BufRead Gemfile,Vagrantfile,Capfile,Guardfile,Rakefile,
-  \*.god,*.rabl,*.jbuilder set filetype=ruby
-autocmd FileType eruby setlocal shiftwidth=2 softtabstop=2
-
-autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
-autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
-autocmd BufNewFile,BufRead *.json setlocal shiftwidth=2 softtabstop=2 tabstop=2
-
 " Disable arrow keys (omg, dafuq i'm doing)
 noremap <right> <nop>
 noremap <left> <nop>
