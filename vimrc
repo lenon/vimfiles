@@ -4,6 +4,10 @@ let $VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 set nocompatible " turn off Vi compatibility mode
 filetype off " required by Vundle
 
+if &shell =~# 'fish$'
+  set shell=sh
+endif
+
 " Vundle setup
 set rtp+=$VIMHOME/bundle/Vundle.vim " include Vundle into the runtime path
 call vundle#begin($VIMHOME . '/bundle') " initialize Vundle
