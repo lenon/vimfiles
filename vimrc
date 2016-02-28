@@ -25,6 +25,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'morhetz/gruvbox'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'sjl/gundo.vim'
+Plugin 'aliva/vim-fish'
 
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
