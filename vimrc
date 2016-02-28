@@ -1,5 +1,9 @@
-" get the current directory of this script (usually ~/vimfiles)
+" get vim's home directory based on the directory of this script
+" '~/vimfiles' is the default
 let $VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+" put vim's home directory into the runtimepath list
+" this is required to make ftdetect and ftplugin files to be loaded
+set runtimepath+=$VIMHOME
 
 set nocompatible " turn off Vi compatibility mode
 filetype off " required by Vundle
@@ -9,8 +13,8 @@ if &shell =~# 'fish$'
 endif
 
 " Vundle setup
-set rtp+=$VIMHOME/bundle/Vundle.vim " include Vundle into the runtime path
-call vundle#begin($VIMHOME . '/bundle') " initialize Vundle
+set runtimepath+=$VIMHOME/bundle/Vundle.vim " Vundle must be in the runtimepath
+call vundle#begin("$VIMHOME/bundle") " initialize Vundle
 
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
 
@@ -29,10 +33,6 @@ Plugin 'aliva/vim-fish'
 
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
-
-" include ~/vimfiles into the runtime path
-" must be called after Vundle setup
-set rtp+=$VIMHOME
 
 " ervandew/supertab
 let g:SuperTabDefaultCompletionType = '<c-n>'
