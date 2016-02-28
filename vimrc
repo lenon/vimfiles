@@ -84,7 +84,7 @@ let g:syntastic_warning_symbol = 'W>'
 let g:syntastic_stl_format = '%E{E: %fe}%B{ }%W{W: %fw}'
 
 " gruvbox
-let g:gruvbox_termcolors=16
+let g:gruvbox_invert_selection=0
 
 " VIM setup
 set encoding=utf-8
