@@ -9,10 +9,6 @@ Vim 7.4 is the only requirement. I'm currently using Vim in the command-line on
 a Mac OS X, but this configuration should work on other environments without
 problems.
 
-## Included plugins
-
-See [PLUGINS.md](PLUGINS.md).
-
 ## Installation
 
 Clone this repo into your home directory:
