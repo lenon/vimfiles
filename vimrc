@@ -154,10 +154,6 @@ set foldlevel=20
 set foldlevelstart=20
 set foldmethod=indent " folding based on indentation
 
-if version >= 704
-  set regexpengine=1 " new regexp engine makes Vim slow with ruby syntax highlighting
-endif
-
 syntax on " turn on syntax highlighting
 set background=dark
 colorscheme gruvbox " the color scheme (srsly)
