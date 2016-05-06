@@ -3,4 +3,4 @@ ln -s ~/vimfiles/vimrc ~/.vimrc
 ln -s ~/vimfiles/gvimrc ~/.gvimrc
 mkdir -p ~/.config/nvim
 ln -s ~/vimfiles/vimrc ~/.config/nvim/init.vim
-vim +PluginInstall +qall
+vim +PlugInstall +qall

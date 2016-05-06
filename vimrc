@@ -6,33 +6,27 @@ let $VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 set runtimepath+=$VIMHOME
 
 set nocompatible " turn off Vi compatibility mode
-filetype off " required by Vundle
 
 if &shell =~# 'fish$'
   set shell=sh
 endif
 
-" Vundle setup
-set runtimepath+=$VIMHOME/bundle/Vundle.vim " Vundle must be in the runtimepath
-call vundle#begin("$VIMHOME/bundle") " initialize Vundle
+" plugins setup
+call plug#begin("$VIMHOME/plugged")
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'nginx.vim'
+Plug 'tpope/vim-commentary'
+Plug 'scrooloose/syntastic'
+Plug 'morhetz/gruvbox'
+Plug 'tacahiroy/ctrlp-funky'
+Plug 'sjl/gundo.vim'
+Plug 'aliva/vim-fish'
+call plug#end()
 
-Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
-
-" My plugins
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/nerdtree'
-Plugin 'bling/vim-airline'
-Plugin 'nginx.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'scrooloose/syntastic'
-Plugin 'morhetz/gruvbox'
-Plugin 'tacahiroy/ctrlp-funky'
-Plugin 'sjl/gundo.vim'
-Plugin 'aliva/vim-fish'
-
-call vundle#end() " required by Vundle
-filetype plugin indent on " required by Vundle
+filetype plugin indent on
 
 " ervandew/supertab
 let g:SuperTabDefaultCompletionType = '<c-n>'
