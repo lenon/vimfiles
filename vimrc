@@ -104,7 +104,7 @@ set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
 set t_Co=256 " the term has 256 colors
 set completeopt=menuone,preview
 " set ttyfast " improves redrawing
-" set lazyredraw
+set lazyredraw " screen will not be redrawn while executing macros
 " set cursorline " highlight current line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
