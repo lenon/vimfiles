@@ -1,15 +1,23 @@
-" get vim's home directory based on the directory of this script
-" '~/vimfiles' is the default
+" get vim's home directory (usually '~/vimfiles' or '~/.vim')
+" this allows vimfiles to be placed in a path other than the default
 let $VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
-" put vim's home directory into the runtimepath list
+" put vim's home path into the runtimepath list
 " this is required to make ftdetect and ftplugin files to be loaded
 set runtimepath+=$VIMHOME
 
-set nocompatible " turn off Vi compatibility mode
+" turn off Vi compatibility mode
+if !has('nvim')
+  set nocompatible
+end
 
-if &shell =~# 'fish$'
-  set shell=sh
-endif
+" fish is not POSIX compatible, so there are some issues with fish and
+" vim < 7.4.276
+" the solution is to use sh if vim was invoked by a fish shell
+if v:version < 704 || v:version == 704 && !has('patch276')
+  if &shell =~# 'fish$'
+    set shell=/bin/sh
+  endif
+end
 
 " plugins setup
 call plug#begin("$VIMHOME/plugged")
@@ -26,6 +34,8 @@ Plug 'sjl/gundo.vim'
 Plug 'aliva/vim-fish'
 call plug#end()
 
+" turn filetype detection, indent scripts and filetype plugins on
+" this makes ftdetect and ftplugin scripts to be properly loaded
 filetype plugin indent on
 
 " ervandew/supertab
