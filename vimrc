@@ -92,6 +92,7 @@ let g:syntastic_stl_format = '%E{E: %fe}%B{ }%W{W: %fw}'
 let g:gruvbox_invert_selection=0
 
 " VIM setup
+let mapleader = '\' " use backslash as leader key
 set encoding=utf-8
 set nowrap " disable automatic word wrapping
 set modeline " respect modeline in files
