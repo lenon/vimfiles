@@ -21,17 +21,17 @@ end
 
 " plugins setup
 call plug#begin("$VIMHOME/plugged")
+Plug 'aliva/vim-fish'
+Plug 'bling/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
-Plug 'scrooloose/nerdtree'
-Plug 'bling/vim-airline'
-Plug 'nginx.vim'
-Plug 'tpope/vim-commentary'
-Plug 'scrooloose/syntastic'
 Plug 'morhetz/gruvbox'
-Plug 'tacahiroy/ctrlp-funky'
+Plug 'nginx.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 Plug 'sjl/gundo.vim'
-Plug 'aliva/vim-fish'
+Plug 'tacahiroy/ctrlp-funky'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " turn filetype detection, indent scripts and filetype plugins on
