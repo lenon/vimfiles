@@ -95,9 +95,6 @@ let g:gruvbox_invert_selection=0
 let mapleader = '\' " use backslash as leader key
 set encoding=utf-8
 set nowrap " disable automatic word wrapping
-set modeline " respect modeline in files
-set exrc " enable per-directory .vimrc files...
-set secure " ...and disable unsafe commands in them
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
 set hidden " allow Vim to manage multiple buffers effectively
 set autoindent " self explanatory, huh?
@@ -121,6 +118,12 @@ set colorcolumn=80 " show a column on screen that is useful to align text
 set textwidth=0 " disable auto line break
 set clipboard=unnamed " use system clipboard
 set fillchars+=vert:\ " set an empty space as window separator
+
+" modeline setup
+set exrc " enable per-directory .vimrc, .nvimrc and .exrc files
+set modeline " respect commands in files
+set modelines=5 " allow 5 lines of commands
+set secure " disable unsafe commands
 
 " Backup, history and swap files
 set backup " turn on backup
