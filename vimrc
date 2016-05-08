@@ -42,6 +42,7 @@ filetype plugin indent on
 let g:SuperTabDefaultCompletionType = '<c-n>'
 
 " scrooloose/nerdtree
+let g:NERDTreeAutoDeleteBuffer = 1 " always remove a buffer when a file is being deleted or renamed
 let g:NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 let g:NERDTreeShowHidden = 1 " display hidden files
 
