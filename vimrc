@@ -118,6 +118,7 @@ set colorcolumn=80 " show a column on screen that is useful to align text
 set textwidth=0 " disable auto line break
 set clipboard=unnamed " use system clipboard
 set fillchars+=vert:\ " set an empty space as window separator
+set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
 
 " modeline setup
 set exrc " enable per-directory .vimrc, .nvimrc and .exrc files
