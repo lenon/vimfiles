@@ -23,3 +23,19 @@ let s:modes_for_statusline = {
 function statusline#currentmode()
   return toupper(s:modes_for_statusline[mode()])
 endfunction
+
+function statusline#readonly()
+  return &readonly ? ' (ro) ' : ''
+endfunction
+
+function statusline#modified()
+  return &modified ? ' (+) ' : ''
+endfunction
+
+function statusline#help()
+  return &buftype == 'help' ? ' (help) ' : ''
+endfunction
+
+function statusline#filetype()
+  return strlen(&filetype) ? &filetype : 'unknown'
+endfunction

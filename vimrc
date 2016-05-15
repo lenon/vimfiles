@@ -140,14 +140,14 @@ set statusline=
 set statusline+=\ %{statusline#currentmode()}\  " current mode
 set statusline+=%f " file name
 set statusline+=%< " truncate line from here if it is too long
-set statusline+=%M " modified flag
-set statusline+=%R " read only flag
+set statusline+=%{statusline#modified()} " modified flag
+set statusline+=%{statusline#readonly()} " read only flag
 set statusline+=%h " help buffer flag
 set statusline+=%=
-set statusline+=%{&filetype}\  " file type
+set statusline+=%{&fileformat}\  " file format
+set statusline+=%{statusline#filetype()}\  " file type
 set statusline+=%{&encoding}\  " file encoding
-set statusline+=L\ %l/%L\  " line number in the format 'L 1/100'
-set statusline+=C\ %c\  " column number in the format 'C 1'
+set statusline+=%l/%L\ %c\  " line and column number
 
 " override statusline colors
 augroup StatusLineColors
