@@ -22,7 +22,6 @@ end
 " plugins setup
 call plug#begin("$VIMHOME/plugged")
 Plug 'aliva/vim-fish'
-Plug 'bling/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
@@ -54,34 +53,6 @@ let g:ctrlp_match_window = 'max:15,results:50' " increase the max number of resu
 let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
 let g:ctrlp_cache_dir = $VIMHOME . '/tmp/cache'
 let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
-
-" bling/vim-airline
-let g:airline_symbols = {}
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_symbols.linenr = ''
-
-let g:airline#extensions#branch#enabled = 0 " disable git integration
-
-let g:airline#extensions#tabline#enabled = 1 " enable tabline extension
-let g:airline#extensions#tabline#show_tabs = 1 " always show tabs
-let g:airline#extensions#tabline#show_tab_nr = 0 " do not display tab number
-let g:airline#extensions#tabline#show_buffers = 0 " do not display buffers as tabs
-let g:airline#extensions#tabline#show_close_button = 0 " do not show close button
-let g:airline#extensions#tabline#show_tab_type = 0 " do not diplay tab type (tab or buffer)
-
-" override mode mapping
-let g:airline_mode_map = {
-      \ 'n' : 'N',
-      \ 'i' : 'I',
-      \ 'R' : 'R',
-      \ 'v' : 'V',
-      \ 'V' : 'VL',
-      \ '' : 'VB',
-      \ }
-
-" disable the last airline section
-let g:airline_section_z = ''
 
 " scrooloose/syntastic
 let g:syntastic_error_symbol = 'E>'
@@ -143,10 +114,9 @@ set ignorecase " ignore case when searching
 set incsearch " show matches while typing
 set smartcase " ignore case if search pattern is all lowercase
 
-" Status and command line
-set laststatus=2 " always show the status line
+" status and command line
 set noshowmode " do not show current mode on status line
-set ruler " show the cursor position on status line
+set noruler " do not show the cursor position on status line
 set showcmd " show commands on status line
 set title " show the current filename on the window title
 set wildmenu " enable autocomplete on command line
@@ -164,7 +134,30 @@ set foldlevel=20
 set foldlevelstart=20
 set foldmethod=indent " folding based on indentation
 
-syntax on " turn on syntax highlighting
+" statusline
+set laststatus=2 " always show the status line
+set statusline=
+set statusline+=\ %{statusline#currentmode()}\  " current mode
+set statusline+=%f " file name
+set statusline+=%< " truncate line from here if it is too long
+set statusline+=%M " modified flag
+set statusline+=%R " read only flag
+set statusline+=%h " help buffer flag
+set statusline+=%=
+set statusline+=%{&filetype}\  " file type
+set statusline+=%{&encoding}\  " file encoding
+set statusline+=L\ %l/%L\  " line number in the format 'L 1/100'
+set statusline+=C\ %c\  " column number in the format 'C 1'
+
+" override statusline colors
+augroup StatusLineColors
+  autocmd!
+  autocmd ColorScheme * hi! link StatusLine GruvboxFg1
+  autocmd ColorScheme * hi! link StatusLineNC GruvboxBg4
+augroup END
+
+" syntax highlight and colorscheme
+syntax on
 set background=dark
 colorscheme gruvbox " the color scheme (srsly)
 
