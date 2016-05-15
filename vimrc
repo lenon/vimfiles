@@ -72,7 +72,6 @@ set autoindent " self explanatory, huh?
 set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
 set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
-set t_Co=256 " the term has 256 colors
 set completeopt=menuone,preview
 " set ttyfast " improves redrawing
 set lazyredraw " screen will not be redrawn while executing macros
