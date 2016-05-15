@@ -90,6 +90,7 @@ set textwidth=0 " disable auto line break
 set clipboard=unnamed " use system clipboard
 set fillchars+=vert:\ " set an empty space as window separator
 set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
+set title " show the current filename on the window title
 
 " modeline setup
 set exrc " enable per-directory .vimrc, .nvimrc and .exrc files
@@ -113,14 +114,6 @@ set hlsearch " highlight search
 set ignorecase " ignore case when searching
 set incsearch " show matches while typing
 set smartcase " ignore case if search pattern is all lowercase
-
-" status and command line
-set noshowmode " do not show current mode on status line
-set noruler " do not show the cursor position on status line
-set showcmd " show commands on status line
-set title " show the current filename on the window title
-set wildmenu " enable autocomplete on command line
-set wildmode=longest,list " complete longest common string and list alternatives
 
 " Tabs
 set expandtab " convert tabs to spaces
@@ -148,6 +141,13 @@ set statusline+=%{&fileformat}\  " file format
 set statusline+=%{statusline#filetype()}\  " file type
 set statusline+=%{&encoding}\  " file encoding
 set statusline+=%l/%L\ %c\  " line and column number
+
+" command line
+set noshowmode " do not show current mode on command line
+set noruler " do not show the cursor position on command line
+set showcmd " show commands on status line
+set wildmenu " enable autocomplete on command line
+set wildmode=longest:full,full " complete longest common string and list alternatives
 
 " override statusline colors
 augroup StatusLineColors
