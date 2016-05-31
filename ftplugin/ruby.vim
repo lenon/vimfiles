@@ -1,1 +1,1 @@
-nnoremap <leader>. :call SpecAlternate()<cr>
+nnoremap <buffer> <leader>. :call SpecAlternate()<cr>
