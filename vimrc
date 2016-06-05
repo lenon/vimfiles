@@ -44,6 +44,7 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 let g:NERDTreeAutoDeleteBuffer = 1 " always remove a buffer when a file is being deleted or renamed
 let g:NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 let g:NERDTreeShowHidden = 1 " display hidden files
+let g:NERDTreeRespectWildIgnore = 1 " respect wildignore
 
 " ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
