@@ -102,18 +102,20 @@ set modeline " respect commands in files
 set modelines=5 " allow 5 lines of commands
 set secure " disable unsafe commands
 
-" Backup, history and swap files
+" backup and swap files
 set backup " turn on backup
 set writebackup " make a backup before overwriting a file
 set swapfile " turn on swap
-set backupdir=$VIMHOME/tmp/backup// " directory names for the backup files
+set backupdir=$VIMHOME/tmp/backup// " directory for backup files
+set directory=$VIMHOME/tmp/swap// " directory for swap files
 " double slashes "//" at the end of directory means that file names will be
 " built using the complete path
-set directory=$VIMHOME/tmp/swap// " directory names for the swap file
-set history=300 " number of commands saved in the history list
-set undolevels=300 " number of undo levels
 
-" Search
+" history and undo
+set history=1000 " number of commands saved in the history list
+set undolevels=1000 " number of undo levels
+
+" search
 set hlsearch " highlight search
 set ignorecase " ignore case when searching
 set incsearch " show matches while typing
