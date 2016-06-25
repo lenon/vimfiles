@@ -10,7 +10,7 @@ if !has('nvim')
   set nocompatible
 end
 
-" fish is not POSIX compatible, so there are some issues with fish and
+" fish is not POSIX compatible, so there are some issues with it and
 " vim < 7.4.276
 " the solution is to use sh if vim was invoked by a fish shell
 if v:version < 704 || v:version == 704 && !has('patch276')
@@ -56,9 +56,11 @@ let g:ctrlp_cache_dir = $VIMHOME . '/tmp/cache'
 let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
 
 " scrooloose/syntastic
-let g:syntastic_error_symbol = 'E>'
-let g:syntastic_warning_symbol = 'W>'
-let g:syntastic_stl_format = '%E{E: %fe}%B{ }%W{W: %fw}'
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = 'x>'
+let g:syntastic_loc_list_height = 5
+let g:syntastic_warning_symbol = '!>'
 
 " gruvbox
 let g:gruvbox_invert_selection=0
