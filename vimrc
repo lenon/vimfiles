@@ -92,6 +92,10 @@ set fillchars+=vert:\ " set an empty space as window separator
 set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
 set title " show the current filename on the window title
 
+" windows
+set splitbelow " put new windows below the current one
+set splitright " put new windows right of the current one
+
 " modeline setup
 set exrc " enable per-directory .vimrc, .nvimrc and .exrc files
 set modeline " respect commands in files
