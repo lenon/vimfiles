@@ -81,8 +81,6 @@ set lazyredraw " screen will not be redrawn while executing macros
 " set cursorline " highlight current line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
-set novisualbell " disable visual bell
-set noerrorbells " disable error bells
 set autoread " automatically reload file on change
 set scrolloff=5 " minimum number of screen lines above and below the cursor
 set sidescrolloff=20 " minimum number of screen columns to keep to the left and to the right of the cursor
@@ -158,6 +156,10 @@ set noruler " do not show the cursor position on command line
 set showcmd " show commands on status line
 set wildmenu " enable autocomplete on command line
 set wildmode=longest:full,full " complete longest common string and list alternatives
+
+" annoying bells
+set noerrorbells " disable error bells
+set visualbell t_vb= " disable visual bells
 
 " override statusline colors
 augroup StatusLineColors
