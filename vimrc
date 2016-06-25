@@ -116,6 +116,8 @@ set directory=$VIMHOME/tmp/swap// " directory for swap files
 " history and undo
 set history=1000 " number of commands saved in the history list
 set undolevels=1000 " number of undo levels
+set undofile " persistent undo on
+set undodir=$VIMHOME/tmp/undo// " directory for undo files
 
 " search
 set hlsearch " highlight search

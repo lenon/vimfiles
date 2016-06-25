@@ -5,12 +5,15 @@ tmp/*
 !tmp/backup
 !tmp/cache
 !tmp/swap
+!tmp/undo
 tmp/backup/*
 tmp/cache/*
 tmp/swap/*
+tmp/undo/*
 !tmp/backup/.gitkeep
 !tmp/cache/.gitkeep
 !tmp/swap/.gitkeep
+!tmp/undo/.gitkeep
 .DS_Store
 cache/*
 !cache/.gitkeep
