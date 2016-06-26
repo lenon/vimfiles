@@ -173,30 +173,28 @@ syntax on
 set background=dark
 colorscheme gruvbox " the color scheme (srsly)
 
-" autocmds
-
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" Disable arrow keys (omg, dafuq i'm doing)
+" toggle ctrlpfunky
+nnoremap <leader>f :CtrlPFunky<CR>
+" save changes
+nnoremap <leader>w :w<CR>
+" toggle search highlight
+nnoremap <silent> <leader>h :set invhlsearch<CR>
+" toggle nerdtree
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+" toggle gundo.vim
+nnoremap <leader>u :GundoToggle<CR>
+
+" disable arrow keys for navigation
 noremap <right> <nop>
 noremap <left> <nop>
 noremap <up> <nop>
 noremap <down> <nop>
 
+" disable arrow keys in the insert mode
 inoremap <right> <nop>
 inoremap <left> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
-
-" Switch highlighting back off using <Leader>/
-nnoremap <silent> <leader>/ :set invhlsearch<CR>
-
-" Toggle NERDTree
-map <leader><return> :NERDTreeToggle<CR>
-
-" Toggle CtrlPFunky
-nnoremap <Leader>f :CtrlPFunky<CR>
-
-" Toggle gundo.vim
-nnoremap <leader>u :GundoToggle<CR>
