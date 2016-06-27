@@ -153,6 +153,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 nnoremap <leader>f :CtrlPFunky<CR>
 " save changes
 nnoremap <leader>w :w<CR>
+" quit the current window
+nnoremap <leader>q :q<CR>
 " toggle search highlight
 nnoremap <silent> <leader>h :set invhlsearch<CR>
 " toggle nerdtree
