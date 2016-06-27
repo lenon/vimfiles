@@ -1,25 +1,25 @@
-" get vim's home directory (usually '~/vimfiles' or '~/.vim')
-" this allows vimfiles to be placed in a path other than the default
+" Get vimfiles installation directory (usually '~/vimfiles' or '~/.vim').
+" This allows vimfiles to be placed in a path other than the default.
 let $VIMHOME = fnamemodify(resolve(expand('<sfile>:p')), ':h')
-" put vim's home path into the runtimepath list
-" this is required to make ftdetect and ftplugin files to be loaded
+" Put vimfiles into the runtimepath list. This is required to make ftdetect
+" and ftplugin files to be properly loaded.
 set runtimepath+=$VIMHOME
 
-" turn off Vi compatibility mode
+" turn off vi compatibility mode
 if !has('nvim')
   set nocompatible
 end
 
-" fish is not POSIX compatible, so there are some issues with it and
-" vim < 7.4.276
-" the solution is to use sh if vim was invoked by a fish shell
+" Fish shell is not POSIX compatible. Because of that, there are some issues
+" with it and VIM < 7.4.276. The solution is to use sh if VIM was invoked by a
+" fish shell.
 if v:version < 704 || v:version == 704 && !has('patch276')
   if &shell =~# 'fish$'
     set shell=/bin/sh
   endif
 end
 
-" plugins setup
+" plugins managed by vim-plug
 call plug#begin("$VIMHOME/plugged")
 Plug 'aliva/vim-fish'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -33,46 +33,15 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'tpope/vim-commentary'
 call plug#end()
 
-" turn filetype detection, indent scripts and filetype plugins on
-" this makes ftdetect and ftplugin scripts to be properly loaded
+" Turn filetype detection, indent scripts and filetype plugins on. This makes
+" ftdetect and ftplugin scripts to be loaded.
 filetype plugin indent on
 
-" ervandew/supertab
-let g:SuperTabDefaultCompletionType = '<c-n>'
-
-" scrooloose/nerdtree
-let g:NERDTreeAutoDeleteBuffer = 1 " always remove a buffer when a file is being deleted or renamed
-let g:NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
-let g:NERDTreeShowHidden = 1 " display hidden files
-let g:NERDTreeRespectWildIgnore = 1 " respect wildignore
-
-" ctrlpvim/ctrlp.vim
-let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
-let g:ctrlp_working_path_mode = 0 " disable working directory detection
-let g:ctrlp_by_filename = 1 " search by filename and not full path
-let g:ctrlp_match_window = 'max:15,results:50' " increase the max number of results
-let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
-let g:ctrlp_cache_dir = $VIMHOME . '/tmp/cache'
-let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
-
-" scrooloose/syntastic
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_error_symbol = 'x>'
-let g:syntastic_loc_list_height = 5
-let g:syntastic_warning_symbol = '!>'
-
-" gruvbox
-let g:gruvbox_invert_selection=0
-
-" VIM setup
+" vim settings
 let mapleader = '\' " use backslash as leader key
 set encoding=utf-8
 set nowrap " disable automatic word wrapping
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
-set hidden " allow Vim to manage multiple buffers effectively
-set autoindent " self explanatory, huh?
-set copyindent " copy the previous indentation on autoindenting
 set list " show all characters
 set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
 set completeopt=menuone,preview
@@ -81,7 +50,6 @@ set lazyredraw " screen will not be redrawn while executing macros
 " set cursorline " highlight current line
 set showmatch " show matching parenthesis
 set noesckeys " <esc> is recognized immediately
-set autoread " automatically reload file on change
 set scrolloff=5 " minimum number of screen lines above and below the cursor
 set sidescrolloff=20 " minimum number of screen columns to keep to the left and to the right of the cursor
 set number " show line numbers
@@ -92,7 +60,9 @@ set fillchars+=vert:\ " set an empty space as window separator
 set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
 set title " show the current filename on the window title
 
-" windows
+" buffers and windows
+set autoread " automatically reload file on change
+set hidden " allow vim to manage multiple buffers
 set splitbelow " put new windows below the current one
 set splitright " put new windows right of the current one
 
@@ -106,10 +76,10 @@ set secure " disable unsafe commands
 set backup " turn on backup
 set writebackup " make a backup before overwriting a file
 set swapfile " turn on swap
-set backupdir=$VIMHOME/tmp/backup// " directory for backup files
-set directory=$VIMHOME/tmp/swap// " directory for swap files
 " double slashes "//" at the end of directory means that file names will be
 " built using the complete path
+set backupdir=$VIMHOME/tmp/backup// " directory for backup files
+set directory=$VIMHOME/tmp/swap// " directory for swap files
 
 " history and undo
 set history=1000 " number of commands saved in the history list
@@ -123,13 +93,16 @@ set ignorecase " ignore case when searching
 set incsearch " show matches while typing
 set smartcase " ignore case if search pattern is all lowercase
 
-" Tabs
+" tabs, spaces and indentation
+set autoindent " copy indentation from the previous line
+set copyindent " use the same chars used for indenting the previous line
 set expandtab " convert tabs to spaces
-set tabstop=2 " default tab size
-set softtabstop=2
+set smarttab " uses shiftwidth instead of tabstop
 set shiftwidth=2 " number of spaces to use for indentation
+set softtabstop=2
+set tabstop=2 " default tab size
 
-" Folds
+" folds
 set nofoldenable " open all folds by default
 set foldlevel=20
 set foldlevelstart=20
@@ -198,3 +171,31 @@ inoremap <right> <nop>
 inoremap <left> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
+
+" ervandew/supertab
+let g:SuperTabDefaultCompletionType = '<c-n>'
+
+" scrooloose/nerdtree
+let g:NERDTreeAutoDeleteBuffer = 1 " always remove a buffer when a file is being deleted or renamed
+let g:NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
+let g:NERDTreeShowHidden = 1 " display hidden files
+let g:NERDTreeRespectWildIgnore = 1 " respect wildignore
+
+" ctrlpvim/ctrlp.vim
+let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
+let g:ctrlp_working_path_mode = 0 " disable working directory detection
+let g:ctrlp_by_filename = 1 " search by filename and not full path
+let g:ctrlp_match_window = 'max:15,results:50' " increase the max number of results
+let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
+let g:ctrlp_cache_dir = $VIMHOME . '/tmp/cache'
+let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
+
+" scrooloose/syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = 'x>'
+let g:syntastic_loc_list_height = 5
+let g:syntastic_warning_symbol = '!>'
+
+" gruvbox
+let g:gruvbox_invert_selection=0
