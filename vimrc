@@ -54,7 +54,7 @@ set completeopt=menuone,preview
 set fillchars+=vert:\ " set an empty space as window separator
 set lazyredraw " screen will not be redrawn while executing macros
 set list " show all characters
-set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
+set listchars=tab:→→,trail:·,nbsp:_,eol:¬ " show tabs and trailing spaces
 set mouse= " disable mouse support
 set nostartofline " keep the cursor on the same column when moving around
 set nowrap " disable automatic word wrapping
