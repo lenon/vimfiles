@@ -155,17 +155,19 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let mapleader = '\' " use backslash as leader key
 
 " toggle ctrlpfunky
-nnoremap <leader>f :CtrlPFunky<CR>
+nnoremap <leader>f :CtrlPFunky<cr>
 " save changes
-nnoremap <leader>w :w<CR>
+nnoremap <leader>w :w<cr>
 " quit the current window
-nnoremap <leader>q :q<CR>
+nnoremap <leader>q :q<cr>
 " toggle search highlight
-nnoremap <silent> <leader>h :set invhlsearch<CR>
+nnoremap <silent> <leader>h :set invhlsearch<cr>
 " toggle nerdtree
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 " toggle gundo.vim
-nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>u :GundoToggle<cr>
+" sort lines
+vnoremap <leader>s :sort<cr>
 
 " disable arrow keys for navigation
 noremap <right> <nop>
