@@ -56,6 +56,7 @@ set lazyredraw " screen will not be redrawn while executing macros
 set list " show all characters
 set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
 set mouse= " disable mouse support
+set nostartofline " keep the cursor on the same column when moving around
 set nowrap " disable automatic word wrapping
 set number " show line numbers
 set scrolloff=5 " minimum number of screen lines above and below the cursor
