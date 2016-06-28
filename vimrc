@@ -161,6 +161,8 @@ let mapleader = '\' " use backslash as leader key
 nnoremap <leader>f :CtrlPFunky<cr>
 " save changes
 nnoremap <leader>w :w<cr>
+" sudo save changes
+noremap <leader>W :w !sudo tee %<cr>
 " quit the current window
 nnoremap <leader>q :q<cr>
 " toggle search highlight
