@@ -61,7 +61,7 @@ set nowrap " disable automatic word wrapping
 set number " show line numbers
 set scrolloff=5 " minimum number of screen lines above and below the cursor
 set showmatch " show matching parenthesis
-set sidescrolloff=20 " minimum number of screen columns to keep to the left and to the right of the cursor
+set sidescrolloff=5 " minimum number of screen columns to keep to the left and to the right of the cursor
 
 " buffers and windows
 set autoread " automatically reload file on change
