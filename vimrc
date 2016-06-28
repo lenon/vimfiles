@@ -88,6 +88,7 @@ set undofile " persistent undo on
 set undodir=$VIMHOME/tmp/undo// " directory for undo files
 
 " search
+set gdefault " replace all by default
 set hlsearch " highlight search
 set ignorecase " ignore case when searching
 set incsearch " show matches while typing
