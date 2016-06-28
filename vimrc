@@ -37,28 +37,29 @@ call plug#end()
 " ftdetect and ftplugin scripts to be loaded.
 filetype plugin indent on
 
-" vim settings
-let mapleader = '\' " use backslash as leader key
-set encoding=utf-8
-set nowrap " disable automatic word wrapping
+" global settings
+set clipboard=unnamed " use system clipboard
+set encoding=utf-8 " sets how vim represents strings internally
+set title " show the current filename on the window title
+
+" editor
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
+set noesckeys " <esc> is recognized immediately
+set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
+set textwidth=0 " disable auto line break
+
+" navigation and UI
+set colorcolumn=80 " show a column on screen that is useful to align text
+set completeopt=menuone,preview
+set fillchars+=vert:\ " set an empty space as window separator
+set lazyredraw " screen will not be redrawn while executing macros
 set list " show all characters
 set listchars=tab:→→,trail:·,nbsp:_ " show tabs and trailing spaces
-set completeopt=menuone,preview
-" set ttyfast " improves redrawing
-set lazyredraw " screen will not be redrawn while executing macros
-" set cursorline " highlight current line
-set showmatch " show matching parenthesis
-set noesckeys " <esc> is recognized immediately
-set scrolloff=5 " minimum number of screen lines above and below the cursor
-set sidescrolloff=20 " minimum number of screen columns to keep to the left and to the right of the cursor
+set nowrap " disable automatic word wrapping
 set number " show line numbers
-set colorcolumn=80 " show a column on screen that is useful to align text
-set textwidth=0 " disable auto line break
-set clipboard=unnamed " use system clipboard
-set fillchars+=vert:\ " set an empty space as window separator
-set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
-set title " show the current filename on the window title
+set scrolloff=5 " minimum number of screen lines above and below the cursor
+set showmatch " show matching parenthesis
+set sidescrolloff=20 " minimum number of screen columns to keep to the left and to the right of the cursor
 
 " buffers and windows
 set autoread " automatically reload file on change
@@ -149,6 +150,9 @@ colorscheme gruvbox " the color scheme (srsly)
 
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Mappings
+let mapleader = '\' " use backslash as leader key
 
 " toggle ctrlpfunky
 nnoremap <leader>f :CtrlPFunky<CR>
