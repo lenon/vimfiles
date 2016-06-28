@@ -62,6 +62,7 @@ set number " show line numbers
 set scrolloff=5 " minimum number of screen lines above and below the cursor
 set showmatch " show matching parenthesis
 set sidescrolloff=5 " minimum number of screen columns to keep to the left and to the right of the cursor
+set showtabline=2 " always show tabline
 
 " buffers and windows
 set autoread " automatically reload file on change
