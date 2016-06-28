@@ -24,6 +24,7 @@ call plug#begin("$VIMHOME/plugged")
 Plug 'aliva/vim-fish'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
+Plug 'mileszs/ack.vim'
 Plug 'morhetz/gruvbox'
 Plug 'nginx.vim'
 Plug 'scrooloose/nerdtree'
