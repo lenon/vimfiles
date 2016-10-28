@@ -151,7 +151,7 @@ if has('nvim')
 endif
 
 " Automatically quit vim if NERDTree is last and only buffer
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Mappings
 let mapleader = '\' " use backslash as leader key
