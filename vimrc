@@ -170,6 +170,8 @@ nnoremap <silent> <leader>h :set invhlsearch<cr>
 nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 " toggle gundo.vim
 nnoremap <leader>u :GundoToggle<cr>
+" search for files
+nnoremap <leader>s :ack!<space>
 " sort lines
 vnoremap <leader>s :sort<cr>
 
