@@ -152,6 +152,11 @@ syntax on
 set background=dark
 colorscheme gruvbox " the color scheme (srsly)
 
+" enable 24-bit color support on neovim
+if has('nvim')
+  set termguicolors
+endif
+
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
