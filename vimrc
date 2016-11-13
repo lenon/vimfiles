@@ -209,6 +209,3 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol = 'x>'
 let g:syntastic_loc_list_height = 5
 let g:syntastic_warning_symbol = '!>'
-
-" gruvbox
-let g:gruvbox_invert_selection=0
