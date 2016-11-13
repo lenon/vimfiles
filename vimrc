@@ -25,10 +25,10 @@ Plug 'aliva/vim-fish'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'mileszs/ack.vim'
-Plug 'morhetz/gruvbox'
 Plug 'nginx.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'sjl/badwolf'
 Plug 'sjl/gundo.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'tpope/vim-commentary'
@@ -140,17 +140,10 @@ set wildmode=longest:full,full " complete longest common string and list alterna
 set noerrorbells " disable error bells
 set visualbell t_vb= " disable visual bells
 
-" override statusline colors
-augroup StatusLineColors
-  autocmd!
-  autocmd ColorScheme * hi! link StatusLine GruvboxFg1
-  autocmd ColorScheme * hi! link StatusLineNC GruvboxBg4
-augroup END
-
 " syntax highlight and colorscheme
 syntax on
 set background=dark
-colorscheme gruvbox " the color scheme (srsly)
+colorscheme badwolf " the color scheme (srsly)
 
 " enable 24-bit color support on neovim
 if has('nvim')
