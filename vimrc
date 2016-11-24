@@ -172,6 +172,8 @@ nnoremap <silent> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>u :GundoToggle<cr>
 " search for files
 nnoremap <leader>s :Ack!<space>
+" open a new tab
+nnoremap <silent> <leader>t :tabnew<cr>
 " sort lines
 vnoremap <leader>s :sort<cr>
 
