@@ -145,8 +145,8 @@ syntax on
 set background=dark
 colorscheme badwolf " the color scheme (srsly)
 
-" enable 24-bit color support on neovim
-if has('nvim')
+" enable 24-bit color support if it is available
+if has('termguicolors')
   set termguicolors
 endif
 
