@@ -48,6 +48,7 @@ set backspace=eol,start,indent " allow backspacing over everything in insert mod
 set noesckeys " <esc> is recognized immediately
 set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
 set textwidth=0 " disable auto line break
+set virtualedit=onemore " allow the cursor to move just past the end of the line
 
 " navigation and UI
 set colorcolumn=80 " show a column on screen that is useful to align text
