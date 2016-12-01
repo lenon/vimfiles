@@ -40,8 +40,11 @@ filetype plugin indent on
 
 " global settings
 set clipboard=unnamed " use system clipboard
-set encoding=utf-8 " sets how vim represents strings internally
 set title " show the current filename on the window title
+
+" encoding
+set encoding=utf-8 " sets how vim represents strings internally
+set fileencoding=utf-8 " sets the encoding used to write files
 
 " editor
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
