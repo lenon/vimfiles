@@ -81,20 +81,32 @@ set modeline " respect commands in files
 set modelines=5 " allow 5 lines of commands
 set secure " disable unsafe commands
 
-" backup and swap files
+" backup and swap
 set backup " turn on backup
 set writebackup " make a backup before overwriting a file
 set swapfile " turn on swap
-" double slashes "//" at the end of directory means that file names will be
-" built using the complete path
-set backupdir=$VIMHOME/tmp/backup// " directory for backup files
-set directory=$VIMHOME/tmp/swap// " directory for swap files
 
 " history and undo
 set history=1000 " number of commands saved in the history list
 set undolevels=1000 " number of undo levels
 set undofile " persistent undo on
+
+" temporary files
+" double slashes "//" at the end of directory means that file names will be
+" built using the complete path
+set backupdir=$VIMHOME/tmp/backup// " directory for backup files
+set directory=$VIMHOME/tmp/swap// " directory for swap files
 set undodir=$VIMHOME/tmp/undo// " directory for undo files
+
+function! EnsureDirExists(dirname)
+  if !isdirectory(a:dirname)
+    call mkdir(a:dirname, 'p')
+  endif
+endfunction
+
+call EnsureDirExists(&backupdir)
+call EnsureDirExists(&directory)
+call EnsureDirExists(&undodir)
 
 " search
 set gdefault " replace all by default
