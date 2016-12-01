@@ -189,6 +189,12 @@ inoremap <left> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+" neovim terminal
+if has('nvim')
+  " use ESC to exit terminal
+  tnoremap <esc> <c-\><c-n>
+end
+
 " ervandew/supertab
 let g:SuperTabDefaultCompletionType = '<c-n>'
 
