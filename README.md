@@ -19,6 +19,6 @@ Clone this repo into your home directory:
 Then execute the installation script:
 
     cd ~/vimfiles
-    ~/vimfiles/scripts/install.sh
+    ./vimfiles.sh
 
 Start `vim` and enjoy! :beer: :sunglasses:
