@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-ln -s ~/vimfiles/vimrc ~/.vimrc
-ln -s ~/vimfiles/gvimrc ~/.gvimrc
 mkdir -p ~/.config/nvim
-ln -s ~/vimfiles/vimrc ~/.config/nvim/init.vim
+
+ln -s "$PWD/vimrc" ~/.vimrc
+ln -s "$PWD/gvimrc" ~/.gvimrc
+ln -s "$PWD/vimrc" ~/.config/nvim/init.vim
+
 vim +PlugInstall +qall
