@@ -71,7 +71,7 @@ set showtabline=2 " always show tabline
 
 " buffers and windows
 set autoread " automatically reload file on change
-set hidden " allow vim to manage multiple buffers
+set hidden " allow buffer switching without saving
 set splitbelow " put new windows below the current one
 set splitright " put new windows right of the current one
 
