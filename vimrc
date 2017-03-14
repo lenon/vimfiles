@@ -48,7 +48,9 @@ set fileencoding=utf-8 " sets the encoding used to write files
 
 " editor
 set backspace=eol,start,indent " allow backspacing over everything in insert mode
-set noesckeys " <esc> is recognized immediately
+if exists('&esckeys') " this feature was removed from neovim
+  set noesckeys " <esc> is recognized immediately
+endif
 set nrformats-=octal " ignore octal numbers when increment with ctrl-a/x
 set textwidth=0 " disable auto line break
 set virtualedit=onemore " allow the cursor to move just past the end of the line
