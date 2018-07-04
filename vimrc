@@ -21,8 +21,8 @@ end
 
 " plugins managed by vim-plug
 call plug#begin("$VIMHOME/plugged")
-Plug 'aliva/vim-fish'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dag/vim-fish'
 Plug 'ervandew/supertab'
 Plug 'mileszs/ack.vim'
 Plug 'nginx.vim'
