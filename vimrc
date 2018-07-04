@@ -56,7 +56,7 @@ set textwidth=0 " disable auto line break
 set virtualedit=onemore " allow the cursor to move just past the end of the line
 
 " navigation and UI
-set colorcolumn=80 " show a column on screen that is useful to align text
+set colorcolumn=100 " show a column on screen that is useful to align text
 set completeopt=menuone,preview
 set fillchars+=vert:\ " set an empty space as window separator
 set lazyredraw " screen will not be redrawn while executing macros
