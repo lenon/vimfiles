@@ -21,7 +21,14 @@ end
 
 " plugins managed by vim-plug
 call plug#begin("$VIMHOME/plugged")
-Plug 'ctrlpvim/ctrlp.vim'
+
+if executable('fzf')
+  Plug 'junegunn/fzf'
+  Plug 'junegunn/fzf.vim'
+else
+  echom 'fzf executable not found. Install it with "brew install fzf".'
+endif
+
 Plug 'dag/vim-fish'
 Plug 'ervandew/supertab'
 Plug 'mileszs/ack.vim'
@@ -30,7 +37,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'sjl/badwolf'
 Plug 'sjl/gundo.vim'
-Plug 'tacahiroy/ctrlp-funky'
 Plug 'tpope/vim-commentary'
 call plug#end()
 
@@ -174,8 +180,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Mappings
 let mapleader = '\' " use backslash as leader key
 
-" toggle ctrlpfunky
-nnoremap <leader>f :CtrlPFunky<cr>
+" show fzf window
+nmap <leader><space> :Files<cr>
 " save changes
 nnoremap <leader>w :w<cr>
 " sudo save changes
@@ -221,15 +227,6 @@ let g:NERDTreeAutoDeleteBuffer = 1 " always remove a buffer when a file is being
 let g:NERDTreeMinimalUI = 1 " disables the 'Press ? for help' text
 let g:NERDTreeShowHidden = 1 " display hidden files
 let g:NERDTreeRespectWildIgnore = 1 " respect wildignore
-
-" ctrlpvim/ctrlp.vim
-let g:ctrlp_map = '<leader><space>' " open using leader key + space bar
-let g:ctrlp_working_path_mode = 0 " disable working directory detection
-let g:ctrlp_by_filename = 1 " search by filename and not full path
-let g:ctrlp_match_window = 'max:15,results:50' " increase the max number of results
-let g:ctrlp_clear_cache_on_exit = 0 " keep the cache after exit
-let g:ctrlp_cache_dir = $VIMHOME . '/tmp/cache'
-let g:ctrlp_key_loop = 1 " enable input of multi-byte characters
 
 " scrooloose/syntastic
 let g:syntastic_check_on_open = 1
